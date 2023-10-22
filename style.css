@@ -56,12 +56,20 @@ nav ul li a:hover{
     gap: 10px
 }
 
+.right-nav #profile-logo img, .right-nav #cart img{
+    width: 24px;
+height: 24px;
+flex-shrink: 0;
+}
+
 .right-nav #cart{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap:5px;
 }
+
 
 .navbar #logo {
     color: #FF4D00;
@@ -75,7 +83,8 @@ nav ul li a:hover{
 footer {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
+    gap: 20px;
     bottom: 0;
     width: 100%;
 }
@@ -84,20 +93,24 @@ footer {
 footer .footer-content{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    gap: 120px;
+    align-self: center;
 }
 
 footer hr{
     border: 1px solid #FF4D00;
     width: 90%;
+    margin-bottom: 20px;
 }
 
 footer .footer-content .email-subscription {
-    color:#cb9d59
+    color:#cb9d59;
 }
 
 footer .footer-content .email-subscription #es-information{
-    font-size:small;
-
+    font-size:x-small;
+    margin-bottom: 10px;
 }
 
 footer .footer-content .email-subscription #input{
@@ -108,6 +121,7 @@ footer .footer-content .email-subscription #input form{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding:5px;
 }
 
 footer .footer-content .email-subscription #input #email-input{
@@ -115,13 +129,11 @@ footer .footer-content .email-subscription #input #email-input{
     width:max-content;
     color:white;
     border: 0px;
+    flex-grow: 4;
 }
 
-footer .footer-content .email-subscription #input #email-input::selection{
-    background-color: black;
-    width:max-content;
-    color:white;
-    border: 0px;
+footer .footer-content .email-subscription #input #email-input:focus{
+    outline: none !important;
 }
 
 footer .footer-content .email-subscription #input #email-button{
@@ -130,6 +142,21 @@ footer .footer-content .email-subscription #input #email-button{
     border:0px;
 }
 
+footer #footer-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    flex-grow: 2;
+}
+
+footer #footer-column ul{
+    color: grey;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
 
 #copyright{
     display: flex;
