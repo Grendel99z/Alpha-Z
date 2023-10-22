@@ -1,0 +1,163 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+    width:100%;
+    background-color: #cb9d59;
+}
+
+.navbar {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px
+}
+
+.navbar #logo, .navbar .right-nav {
+    align-self: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 8px; 
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    border-bottom: solid #FF4D00;
+}
+
+.right-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px
+}
+
+.right-nav #cart{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:5px;
+}
+
+.navbar #logo {
+    color: #FF4D00;
+}
+
+.header hr{
+    width: 100%;
+}
+/* homepage */
+
+.wrapper { background-color: #000000;
+    width: 80%;
+    margin: auto;
+    min-width: 850px;
+    color:#FFFFFF; }
+
+#banner {text-align: center;}
+
+#underbanner {text-align: center;
+padding-top: 50px;}
+
+#rectangle1 {float: right;
+padding-top: 20px;}
+
+#rectangle2 {float: left;}
+
+#hr {text-align: center;}
+
+#bottom {text-align: center;}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+footer .footer-content{
+    display: flex;
+    flex-direction: row;
+}
+
+footer hr{
+    border: 1px solid #FF4D00;
+    width: 90%;
+}
+
+footer .footer-content .email-subscription {
+    color:#cb9d59
+}
+
+footer .footer-content .email-subscription #es-information{
+    font-size:small;
+
+}
+
+footer .footer-content .email-subscription #input{
+    border:1px solid #cb9d59;
+}
+
+footer .footer-content .email-subscription #input form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .footer-content .email-subscription #input #email-input{
+    background-color: black;
+    width:max-content;
+    color:white;
+    border: 0px;
+}
+
+footer .footer-content .email-subscription #input #email-input::selection{
+    background-color: black;
+    width:max-content;
+    color:white;
+    border: 0px;
+}
+
+footer .footer-content .email-subscription #input #email-button{
+    background-color: black;
+    color: #cb9d59;
+    border:0px;
+}
+
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3px;
+    width:100%;
+    background-color: #cb9d59;
+}
+
