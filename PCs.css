@@ -1,3 +1,24 @@
+/* NOW FOR PCs CSS */
+
+#topofpc {margin-top: 50px;
+    margin-left: 30px;}
+
+#pcvalue{ text-align: center;}
+
+#pcpremium{ text-align: center;}
+
+/* NOW FOR LAPTOPs CSS */
+  #laptopdisplayrow1 { text-align: center;
+     margin-bottom: 100px;}
+     
+#topoflaptop {margin-top: 50px;
+    margin-left: 30px;}
+
+#laptopvalue{ text-align: center;}
+
+#laptoppremium{ text-align: center;}
+
+/* THE REST */
 body {
 	background-color: black;
 	color: white;
@@ -92,7 +113,6 @@ nav ul li a:hover {
 #body {
 	flex: 1;
 }
-
 
 /* NOW FOR FOOTER CSS */
 
