@@ -1,3 +1,18 @@
+
+/* NOW FOR CART CSS */
+
+#leftcolumn { margin-top: 50px;
+    margin-left: 30px;
+    width: 300px;
+    float:left;
+    }
+    
+    #rightcolumn { margin-top: 100px;
+    margin-left: 800px;
+    margin-bottom: 50px;
+    }
+
+/* THE REST */
 body {
 	background-color: black;
 	color: white;
@@ -92,7 +107,6 @@ nav ul li a:hover {
 #body {
 	flex: 1;
 }
-
 
 /* NOW FOR FOOTER CSS */
 

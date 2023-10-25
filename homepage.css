@@ -1,3 +1,26 @@
+/* homepage */
+    
+#banner {text-align: center;}
+
+#underbanner {text-align: center;
+padding-top: 50px;}
+
+#rectangle1 {float: right;
+padding-top: 20px;
+font-size: 20px;}
+
+#textarea {float: left;}
+
+#textarea2 {float: right;
+font-size: 17px;}
+
+#rectangle2 {float: left;}
+
+#hr {text-align: center;}
+
+#bottom {text-align: center;}
+
+/* THE REST */
 body {
 	background-color: black;
 	color: white;
@@ -92,7 +115,6 @@ nav ul li a:hover {
 #body {
 	flex: 1;
 }
-
 
 /* NOW FOR FOOTER CSS */
 
