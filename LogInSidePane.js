@@ -55,7 +55,7 @@ const loggedInTemplate = `
 	</div>
 	<div class="panelDiv" >
 		<div class = "panelNav">
-			<img src="assets/logOut.png" class="panelIcon"/>
+			< img src="assets/logOut.png" class="panelIcon"/>
 			<p>Log Out</p>
 			<a>></a>
 		</div>
