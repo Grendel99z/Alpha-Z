@@ -1,0 +1,16 @@
+/* NOW FOR CONTACT CSS */
+
+#toprightofcontact {float: right;
+    margin-right: 50px;
+    margin-top: 70px;
+    font-size: 30px;
+    }
+
+#topofcontact {margin-top: 125px;
+margin-left: 30px;}
+
+#furtherquestions {margin-top: 50px;
+   margin-left: 30px;
+   margin-bottom:50px;}
+
+label {color:#DA2424;}
