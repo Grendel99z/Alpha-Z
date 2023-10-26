@@ -1,22 +1,48 @@
-#productContent {
+#body {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	gap: 20%;
 }
 
-#productContent img {
+#body #productImage {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: start;
 	width: 80%;
+	max-width: 400px;
 	top: 80px;
 	position: -webkit-sticky;
 	position: sticky;
 }
 
-#productDetails p {
+#body #productImage img {
+	width: 80%;
+	max-width: 400px;
+}
+
+#body #productDetails {
+	width: 80%;
+	max-width: 400px;
+}
+
+#body #productDetails p {
 	width: 80%;
 }
 
-#productAdditions p {
-	width: 80%;
-	font-size: smaller;
+.photo-album ul {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+
+.photo-album li {
+	list-style: none;
+	float: left;
+	padding: 7px;
+	border: 1px solid black;
+	border-radius: 3px;
 }
 
 input[type="radio"] {
@@ -32,35 +58,34 @@ input[type="radio"] {
 	}
 }
 
-#productAdditions label {
+#productDetails #product_customization_selection {
+	display: flex;
+	flex-direction: row;
+	gap: 2%;
+}
+
+#productDetails #product_customization_selection label {
 	color: white;
-	width: 80%;
-	height: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	border: 1px solid white;
-	border-radius: 20px;
-	padding: 1rem 0;
-	margin-bottom: 1rem;
-	margin: 1rem 0.2rem;
+	padding: 5px;
 	text-align: center;
 	position: relative;
 }
 
-#productAdditions label p {
+#productDetails #product_customization_selection label p {
 	width: auto;
-	margin-left: 10px;
-	margin-right: 10px;
 	text-align: left;
+	font-size: small;
 }
 
-#productAdditions label .price {
-	color: greenyellow;
-}
-
-input[type="radio"]:checked + label {
-	box-shadow: 0px 0px 20px hsla(150, 100%, 50%, 0.675);
+#productDetails
+	#product_customization_selection
+	input[type="radio"]:checked
+	+ label {
+	border: 1px solid rgb(0, 234, 255);
 }
 
 #customize_summary {

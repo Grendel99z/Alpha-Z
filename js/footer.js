@@ -50,6 +50,6 @@ const footerTemplate = `
                 Copyright &copy; 2023 Alpha Z. All rights reserved.
             </div>
         </footer>
-`
+`;
 
 document.getElementById("footer").innerHTML = footerTemplate;
