@@ -9,14 +9,28 @@ padding-top: 50px;}
 padding-top: 20px;
 font-size: 20px;}
 
-#textarea {float: left;}
+#textarea {border-radius: 20px;
+border: 2px solid #53a572;
+padding: 20px;
+width: 550px;
+height: 450px;
+font-size: 17px;
+float:left;}
 
-#textarea2 {float: right;
-font-size: 17px;}
+#textarea2 {border-radius: 20px;
+border: 2px solid #53a572;
+padding: 12px;
+width: 600px;
+height: 520px;
+font-size: 21px;
+float:right;}
 
-#rectangle2 {float: left;}
+#rectangle2 {float: left;
+margin-top: 50px;
+margin-left: 50px;}
 
-#hr {text-align: center;}
+#hr {text-align: center;
+    }
 
 #bottom {text-align: center;
 
