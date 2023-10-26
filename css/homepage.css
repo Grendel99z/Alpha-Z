@@ -1,0 +1,27 @@
+/* homepage */
+    
+#banner {text-align: center;}
+
+#underbanner {text-align: center;
+padding-top: 50px;}
+
+#rectangle1 {float: right;
+padding-top: 20px;
+font-size: 20px;}
+
+#textarea {float: left;}
+
+#textarea2 {float: right;
+font-size: 17px;}
+
+#rectangle2 {float: left;}
+
+#hr {text-align: center;}
+
+#bottom {text-align: center;
+
+
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}

@@ -1,0 +1,16 @@
+/* NOW FOR ACCESSORIES CSS */
+
+#topofaccessories {margin-top: 50px;
+    margin-left: 30px;}
+
+#accessoriesbar {text-align: center;
+  border: 1px solid red;
+  height: 100px;
+  background-color: #4B391D;
+  margin-bottom: 50px;}
+
+#mousedisplayrow1 { text-align: center;
+     margin-bottom: 100px;}
+
+#mousedisplayrow2 { text-align: center;
+     margin-bottom:100px;}
