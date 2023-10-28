@@ -4,6 +4,7 @@
 		<title>Alpha Z template</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" type="text/css" href="css/Accessories.css" />
+		<script defer src="js/filteraccessories.js"></script>
 	</head>
 
 	<body>
@@ -19,32 +20,79 @@
 				</div>
 
 				<div id="accessoriesbar">
-					Filter By: Mouse Keyboard Headsets Webcams Microphones <br />
+					Filter By: <br />
+
+									<!-- Control buttons -->
+				<div id="myBtnContainer">
+					<!--<button class="btn active" onclick="filterSelection('all')"> Show all</button>-->
+					<button class="btn" onclick="filterSelection('Mouse')"> Mouse</button>
+					<button class="btn" onclick="filterSelection('Keyboard')"> Keyboard</button>
+					<button class="btn" onclick="filterSelection('Headset')"> Headsets</button>
+					<button class="btn" onclick="filterSelection('Webcam')"> Webcams</button>
+					<button class="btn" onclick="filterSelection('Microphone')"> Microphones</button>
+				</div>
 					xx results found
 				</div>
+				
+				<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+				<div class="container">
+					<div class="filterDiv Mouse">
+						
+					  <img src="assets/pc1.avif" width= "500px" height="500px" alt="Product Name">
+					  <img src="assets/pc1.avif" width= "500px" height="500px" alt="Product Name">
+					
+				</div>
+          
+			
+			    </div>
 
-				<div id="mousedisplayrow1">
-					<img src="banner.jpg" width="350px" height="315px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-					<img src="banner.jpg" width="350px" height="315px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-					<img src="banner.jpg" width="350px" height="315px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="container">
+					<div class="filterDiv Keyboard">
+						
+					  <img src="assets/laptop1.jpg" width= "500px" height="500px" alt="Product Name">
+					  <img src="assets/laptop2.jpg" width= "500px" height="500px" alt="Product Name">
+					
 				</div>
 
-				<div id="mousedisplayrow2">
-					<img src="banner.jpg" width="350px" height="315px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-					<img src="banner.jpg" width="350px" height="315px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-					<img src="banner.jpg" width="350px" height="315px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				</div>
-			</div>
+
+				<div class="container">
+					<div class="filterDiv Headset">
+						
+					  <img src="assets/laptop3.jpg" width= "500px" height="500px" alt="Product Name">
+					  <img src="assets/laptop4.jpg" width= "500px" height="500px" alt="Product Name">
+
+				</div>
+          
+				
+			    </div>
+
+				<div class="container">
+					<div class="filterDiv Webcam">
+						
+					  <img src="assets/accessories.avif" width= "500px" height="500px" alt="Product Name">
+					  <img src="assets/accessories.avif" width= "500px" height="500px" alt="Product Name">
+					
+				</div>
+ 
+			    </div>
+
+				<div class="container">
+					<div class="filterDiv Microphone">
+						
+					  <img src="assets/pc1.avif" width= "500px" height="500px" alt="Product Name">
+					  <img src="assets/pc1.avif" width= "500px" height="500px" alt="Product Name">
+
+				</div>
+          
+				
+			    </div>
+          
+				
+			    </div>
+
+
+		</div>
 			<div id="footer"></div>
 		</div>
 	</body>
