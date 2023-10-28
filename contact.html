@@ -17,6 +17,19 @@
 					CUSTOMER"
 				</div>
 
+				<div id="contactdetails">
+
+					<h1>Contact Us</h1> <br /><br />
+	
+					<div id = "colourcontact"><p>Visit Us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</p></div>
+					<p>1 Nanyang Walk &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AlphaZ@Alpha.com </p>
+					<p>Singapore 637616 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+6512345678 </p>
+	
+					<br /><br />
+	
+				</div>
+
 				<div id="topofcontact">
 					<label><h1>FAQs</h1></label> <br /><br />
 					Q: How long does it take for my order to be delivered? <br />
@@ -33,14 +46,61 @@
 				</div>
 
 				<div id="furtherquestions">
-					<label><h1>Further Questions</h1></label> <br /><br />
+					<label><h1>Further Questions</h1></label> <br><br>
 
-					<img src="banner.jpg" width="600px" height="315px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div id= "furthertext">
+				If you have any further queries or you believe there are areas for improvement? Please take a moment to complete the feedback form below,
+				as we highly value our customers' input.</div><br><br>
+				<div id="feedbackform">
+				<form action="show_post.php" method="post" id="feedback-form">
+					<table class="contact">
+						<tr class="contact-item">
+							<td class="item-name">
+								<label for="name">*Name:</label>
+							</td>
+							<td class="input-field">
+								<input type="text" name="name" id="name">
+								<br>
+								<span class="error" id="error-name"></span>
+							</td>
+						</tr>
 
-					<img src="contactdetails.jpg" width="600px" height="315px" />
-				</div>
+						<tr class="contact-item">
+							<td class="item-name">
+								<label for="email">*E-mail:</label>
+							</td>
+							<td class="input-field">
+								<input type="email" name="email" id="email">
+								<br>
+								<span class="error" id="error-email"></span>
+							</td>
+						</tr>
+
+						<tr class="contact-item">
+							<td class="item-name">
+								<label for="experience">*Comments</label>
+							</td>
+							<td class="input-field">
+								<textarea name="comments" id="comments"
+									rows="2" cols="30" required></textarea>
+								<br>
+								<span class="error" id="error-com"></span>
+							</td>
+						</tr>
+					</table>
+
+					<br>
+
+					<div id = "feedbackbutton">
+					<input type="submit" value="Submit" id="submit-btn">
+					<br>
+					<span class="error" id="error-form"></span>
+					</div>
+				</form>
 			</div>
+			</div>
+			</div>
+			
 			<div id="footer"></div>
 		</div>
 	</body>
