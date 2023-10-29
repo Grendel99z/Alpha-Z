@@ -1,13 +1,16 @@
 /* NOW FOR ACCESSORIES CSS */
 
 #topofaccessories {margin-top: 50px;
-    margin-left: 30px;}
+    margin-left: 30px;
+    font-size: 18px;}
 
 #accessoriesbar {text-align: center;
-  border: 1px solid red;
+  border: 1px solid #4B391D;
   height: 100px;
   background-color: #4B391D;
-  margin-bottom: 50px;}
+  margin-bottom: 50px;
+  width: 95%;
+  margin-left: 50px;}
 
 #mousedisplayrow1 { text-align: center;
      margin-bottom: 100px;}
@@ -31,8 +34,11 @@
    
    /* The "show" class is added to the filtered elements */
 .show {
-     display: flex;
-     margin-left: 250px;
+     display: grid;
+     grid-auto-flow: column;
+     margin-left: 325px;
+     gap: 50px;
+     margin-bottom: 150px;
    }
    
    /* Style the buttons */
@@ -54,3 +60,25 @@
      background-color: #666;
      color: white;
    }
+
+/* product card */
+
+.product-card {
+  width: 100%;
+  margin-bottom: 150px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  border-radius: 30px;
+  height: 450px;
+}
+
+.product-title {
+  font-size: 20px;
+  margin-left: -250px;
+}
+
+.product-price {
+  font-weight: bold;
+  margin-left: -330px;
+}
