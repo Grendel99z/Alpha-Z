@@ -9,3 +9,43 @@
 #laptopvalue{ text-align: center;}
 
 #laptoppremium{ text-align: center;}
+
+.product-list-container {
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 230px;
+    gap: 50px;
+  }
+
+.product-card {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+.product-card {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    border-radius: 30px;
+    height: 600px;
+  }
+  
+.product-title {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+.product-description {
+    margin: 10px 0;
+  }
+  
+.product-price {
+    font-weight: bold;
+    margin: 0;
+  }
