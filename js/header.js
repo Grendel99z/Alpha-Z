@@ -17,10 +17,10 @@ const headerTemplate=`
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">PCs</a></li>
-                        <li><a href="#">Laptop</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="PCs.html">PCs</a></li>
+                        <li><a href="Laptops.html">Laptop</a></li>
+                        <li><a href="Accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class = "right-nav">
@@ -29,7 +29,7 @@ const headerTemplate=`
                     </div>
                     <div id = "cart">
                         <div id = "cart-logo">
-                            <img src="assets/cart.png">
+                            <a href="cart.html"><img src="assets/cart.png"></a>
                         </div>
                         <div id = "cart-content">
                             0
