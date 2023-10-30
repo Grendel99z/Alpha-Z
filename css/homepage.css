@@ -39,3 +39,39 @@ margin-left: 50px;}
 	justify-content: space-between;
 	gap: 10px;
 }
+
+.product-list-container {
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 0px;
+    gap: 50px;
+	font-size: 30px;	
+  }	
+
+a link {color: white;
+         }
+a {text-decoration: none;}
+  
+  /* visited link */
+  a:visited {
+	color: white;
+  }
+  
+#pc {border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    width: 75px;
+    margin-left: 300px;
+    padding-left: 40px;}
+
+#laptop {border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    width: 125px;
+    padding: 10px;}
+
+
+#accessories {border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;}
