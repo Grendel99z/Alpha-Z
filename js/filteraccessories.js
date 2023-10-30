@@ -1,4 +1,4 @@
-filterSelection("Mouse")
+filterSelection("all")
 
 
 function filterSelection(c) {
