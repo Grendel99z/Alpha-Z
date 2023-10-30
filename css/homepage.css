@@ -1,39 +1,52 @@
 /* homepage */
-    
-#banner {text-align: center;}
 
-#underbanner {text-align: center;
-padding-top: 50px;}
+#banner {
+	text-align: center;
+}
 
-#rectangle1 {float: right;
-padding-top: 20px;
-font-size: 20px;}
+#underbanner {
+	text-align: center;
+	padding-top: 50px;
+}
 
-#textarea {border-radius: 20px;
-border: 2px solid #53a572;
-padding: 20px;
-width: 550px;
-height: 450px;
-font-size: 17px;
-float:left;}
+#rectangle1 {
+	float: right;
+	padding-top: 20px;
+	font-size: 20px;
+}
 
-#textarea2 {border-radius: 20px;
-border: 2px solid #53a572;
-padding: 12px;
-width: 600px;
-height: 520px;
-font-size: 21px;
-float:right;}
+#textarea {
+	border-radius: 20px;
+	border: 2px solid #53a572;
+	padding: 20px;
+	width: 550px;
+	height: 450px;
+	font-size: 17px;
+	float: left;
+}
 
-#rectangle2 {float: left;
-margin-top: 50px;
-margin-left: 50px;}
+#textarea2 {
+	border-radius: 20px;
+	border: 2px solid #53a572;
+	padding: 12px;
+	width: 600px;
+	height: 520px;
+	font-size: 21px;
+	float: right;
+}
 
-#hr {text-align: center;
-    }
+#rectangle2 {
+	float: left;
+	margin-top: 50px;
+	margin-left: 50px;
+}
 
-#bottom {text-align: center;
+#hr {
+	text-align: center;
+}
 
+#bottom {
+	text-align: center;
 
 	align-items: center;
 	justify-content: space-between;
@@ -41,37 +54,45 @@ margin-left: 50px;}
 }
 
 .product-list-container {
-    display: grid;
-    grid-auto-flow: column;
-    margin-left: 0px;
-    gap: 50px;
-	font-size: 30px;	
-  }	
+	display: grid;
+	grid-auto-flow: column;
+	margin-left: 0px;
+	gap: 50px;
+	font-size: 30px;
+}
 
-a link {color: white;
-         }
-a {text-decoration: none;}
-  
-  /* visited link */
-  a:visited {
+a link {
 	color: white;
-  }
-  
-#pc {border: 2px solid #ccc;
-    padding: 10px;
-    border-radius: 15px;
-    width: 75px;
-    margin-left: 300px;
-    padding-left: 40px;}
+}
+a {
+	text-decoration: none;
+}
 
-#laptop {border: 2px solid #ccc;
-    padding: 10px;
-    border-radius: 15px;
-    width: 125px;
-    padding: 10px;}
+/* visited link */
+a:visited {
+	color: white;
+}
 
+#pc {
+	border: 2px solid #ccc;
+	padding: 10px;
+	border-radius: 15px;
+	width: 75px;
+	margin-left: 300px;
+	padding-left: 40px;
+}
 
-#accessories {border: 2px solid #ccc;
-    padding: 10px;
-    border-radius: 15px;
-    width: 200px;}
+#laptop {
+	border: 2px solid #ccc;
+	padding: 10px;
+	border-radius: 15px;
+	width: 125px;
+	padding: 10px;
+}
+
+#accessories {
+	border: 2px solid #ccc;
+	padding: 10px;
+	border-radius: 15px;
+	width: 200px;
+}
