@@ -91,6 +91,7 @@ nav ul li a:hover {
 	width: 80%;
 	margin: auto;
 	min-width: 850px;
+	max-width: 1920px;
 }
 
 /* NOW FOR FOOTER CSS */
