@@ -1,7 +1,12 @@
 <?php
 session_start();
+    if($_SESSION['error']){
+        echo '<script>alert("'.$_SESSION['error'].'")</script>';
+    }
+  
+  unset($_SESSION['error']);
 ?>
-<div class = "header">
+        <div class = "header">
             <div class = "promotion">
                 <div id = "currency">
                     SGD
@@ -15,14 +20,14 @@ session_start();
             </div>
             <div class = "navbar">
                 <div id = "logo">
-                    Alpha Z
+                    <a href="homepage.php">Alpha Z</a>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="PCs.html">PCs</a></li>
-                        <li><a href="Laptops.html">Laptop</a></li>
-                        <li><a href="Accessories.html">Accessories</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="PCs.php">PCs</a></li>
+                        <li><a href="Laptops.php">Laptop</a></li>
+                        <li><a href="Accessories.php">Accessories</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </nav>
                 <div class = "right-nav">

@@ -1,4 +1,4 @@
-const headerTemplate=`
+const headerTemplate = `
 <div class = "header">
             <div class = "promotion">
                 <div id = "currency">
@@ -13,7 +13,7 @@ const headerTemplate=`
             </div>
             <div class = "navbar">
                 <div id = "logo">
-                    Alpha Z
+                    <a href="homepage.html">Alpha Z</a>
                 </div>
                 <nav>
                     <ul>
@@ -39,6 +39,6 @@ const headerTemplate=`
             </div>
             <hr>
         </div>
-`
+`;
 
 document.getElementById("header").innerHTML = headerTemplate;
