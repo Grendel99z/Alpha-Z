@@ -39,7 +39,7 @@
 .show {
 	display: grid;
 	grid-auto-flow: column;
-	margin-left: 325px;
+	margin-left: 280px;
 	gap: 50px;
 	margin-bottom: 150px;
 }
