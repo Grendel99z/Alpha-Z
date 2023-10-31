@@ -1,47 +1,63 @@
 /* NOW FOR CONTACT CSS */
 
-#toprightofcontact {float: right;
-    margin-right: 30px;
-    margin-top: 70px;
-    font-size: 35px;
-    }
-
-#topofcontact {margin-top: 80px;
-    margin-left: 30px;
-    font-size: 20.5px;
-    border-radius: 20px;
-    border: 2px solid #53a572;
-    padding: 12px;
-    width: 750px;}
-
-#furtherquestions {margin-top: 50px;
-    margin-left: 30px;
-    margin-bottom:50px;
-    border-radius: 20px;
-    border: 2px solid #53a572;
-    padding: 12px;
-    width: 750px;}
-
-label {color:#DA2424;}
-
-#feedbackbutton { margin-left: 300px;
-    margin-bottom: 50px;}
-
-#furthertext {font-size: 20px;}
-
-#feedbackform {font-size: 20px;}
-/* create a css style for contactdetails and make it float to right while beside the furtherquestions div */
-
-#contactdetails { float: right;
-    margin-top: 560px;
-    margin-right:-350px;
-    font-size: 20px;
-    border-radius: 20px;
-    border: 2px solid #53a572;
-    padding: 12px;
-    height: 400px;
-    width: 500px;
+#toprightofcontact {
+	float: right;
+	margin-right: 30px;
+	margin-top: 70px;
+	font-size: 35px;
 }
 
-#colourcontact {color: #F89955;
-font-size: 25px;}
+#topofcontact {
+	margin-top: 80px;
+	margin-left: 30px;
+	font-size: 20.5px;
+	border-radius: 20px;
+	border: 2px solid #53a572;
+	padding: 12px;
+	width: 750px;
+}
+
+#furtherquestions {
+	margin-top: 50px;
+	margin-left: 30px;
+	margin-bottom: 50px;
+	border-radius: 20px;
+	border: 2px solid #53a572;
+	padding: 12px;
+	width: 750px;
+}
+
+label {
+	color: #da2424;
+}
+
+#feedbackbutton {
+	margin-left: 300px;
+	margin-bottom: 50px;
+}
+
+#furthertext {
+	font-size: 20px;
+}
+
+#feedbackform {
+	font-size: 20px;
+}
+/* create a css style for contactdetails and make it float to right while beside the furtherquestions div */
+
+#contactdetails {
+	float: right;
+	margin-top: 560px;
+	margin-right: -350px;
+	font-size: 20px;
+	border-radius: 20px;
+	border: 2px solid #53a572;
+	padding: 12px;
+	height: 400px;
+	width: 500px;
+}
+
+#colourcontact {
+	color: #f89955;
+	font-size: 25px;
+}
