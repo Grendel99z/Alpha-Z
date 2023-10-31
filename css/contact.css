@@ -10,20 +10,15 @@
 #topofcontact {
 	margin-top: 80px;
 	margin-left: 30px;
-	font-size: 20.5px;
+	font-size: 21.5px;
 	border-radius: 20px;
-	border: 2px solid #53a572;
 	padding: 12px;
 	width: 750px;
 }
 
 #furtherquestions {
-	margin-top: 50px;
 	margin-left: 30px;
 	margin-bottom: 50px;
-	border-radius: 20px;
-	border: 2px solid #53a572;
-	padding: 12px;
 	width: 750px;
 }
 
@@ -32,12 +27,12 @@ label {
 }
 
 #feedbackbutton {
-	margin-left: 300px;
+	margin-left: 430px;
 	margin-bottom: 50px;
 }
 
 #furthertext {
-	font-size: 20px;
+	font-size: 25px;
 }
 
 #feedbackform {
@@ -51,7 +46,6 @@ label {
 	margin-right: -350px;
 	font-size: 20px;
 	border-radius: 20px;
-	border: 2px solid #53a572;
 	padding: 12px;
 	height: 400px;
 	width: 500px;
@@ -60,4 +54,12 @@ label {
 #colourcontact {
 	color: #f89955;
 	font-size: 25px;
+}
+
+fieldset {
+	border: 2px solid #f89955;
+	border-radius: 20px;
+	padding: 12px;
+	width: 570px;
+	height: 220px;
 }

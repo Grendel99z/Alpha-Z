@@ -56,23 +56,23 @@
 				</div>
 
 				<div id="furtherquestions">
-					<label><h1>Further Questions</h1></label> <br /><br />
+					<label><h1>Further Questions?</h1></label> <br /><br />
 
 					<div id="furthertext">
-						If you have any further queries or you believe there are areas for
-						improvement? Please take a moment to complete the feedback form
-						below, as we highly value our customers' input.
+						If you have any further queries or if you feel there are areas<br> where we can make improvements,
+						we kindly request that<br>you take a moment to fill out the feedback form below. We greatly appreciate our customers' feedback.
 					</div>
 					<br /><br />
 					<div id="feedbackform">
 						<form action="show_post.php" method="post" id="feedback-form">
+							<fieldset><legend>Customer Information</legend>
 							<table class="contact">
 								<tr class="contact-item">
 									<td class="item-name">
 										<label for="name">*Name:</label>
 									</td>
 									<td class="input-field">
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" size="50" />
 										<br />
 										<span class="error" id="error-name"></span>
 									</td>
@@ -83,7 +83,7 @@
 										<label for="email">*E-mail:</label>
 									</td>
 									<td class="input-field">
-										<input type="email" name="email" id="email" />
+										<input type="email" name="email" id="email" size="50" />
 										<br />
 										<span class="error" id="error-email"></span>
 									</td>
@@ -98,7 +98,8 @@
 											name="comments"
 											id="comments"
 											rows="5"
-											cols="30"
+											cols="50"
+										    width="150%"
 											required
 										></textarea>
 										<br />
@@ -113,7 +114,7 @@
 								<input type="submit" value="Submit" id="submit-btn" />
 								<br />
 								<span class="error" id="error-form"></span>
-							</div>
+							</div></fieldset>
 						</form>
 					</div>
 				</div>
