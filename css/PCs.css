@@ -20,30 +20,43 @@
 	display: grid;
 	grid-auto-flow: column;
 	margin-left: 230px;
-	gap: 50px;
+	gap: 10px;
 }
 
 .product-card {
 	width: 30%;
-	box-sizing: border-box;
+	border-style: border-box;
 	width: 100%;
 	margin-bottom: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 2px;
 	padding: 10px;
 	border: 1px solid #ccc;
-	border-radius: 30px;
+	border-radius: 20px;
 }
 
 .product-title {
 	font-size: 20px;
 	margin: 0;
+	text-align: left;
 }
 
-.product-description {
-	margin: 10px 0;
+.product-description { text-align: left	;
+	background-color: #1A1A1A;
+	height: 50px;
+	
 }
 
 .product-price {
 	font-weight: bold;
 	margin: 0;
+	text-align: left;
+	font-size: 20px;
+}
+
+.product-button { text-align: center;
+	background-color: #11642d;
+	border-radius: 10px;
+	height: 75px;
+	font-size: 25px;
+
 }
