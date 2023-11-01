@@ -33,9 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result) {
         // Log the user in and set the session
         session_start();
-        $_SESSION['name'] = $name;
-        $_SESSION['email'] = $email;
-        $_SESSION['logged_in'] = true;
+        $_SESSION['user_id'] = $result->fetch_assoc()['id'];
 
         // Redirect to the home page
         // Redirect back to the previous page

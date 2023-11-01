@@ -32,11 +32,11 @@ session_start();
                 </nav>
                 <div class = "right-nav">
                     <div id="profile-logo">
-                        <img src="assets/profile.png" class="openbtn" onclick="openNav()">
+                        <img src="../assets/profile.png" class="openbtn" onclick="openNav()">
                     </div>
                     <div id = "cart">
                         <div id = "cart-logo">
-                            <a href="cart.html"><img src="assets/cart.png"></a>
+                            <a href="cart.html"><img src="../assets/cart.png"></a>
                         </div>
                         <div id = "cart-content">
                             0

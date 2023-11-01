@@ -24,8 +24,7 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
     
     // If email and password are valid, set session variables and redirect back to requesting page
     if ($result->num_rows == 1) {
-        $_SESSION['email'] = $email;
-        $_SESSION['logged_in'] = true;
+        $_SESSION['user_id'] = $result->fetch_assoc()['id'];
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit;
     } else {
