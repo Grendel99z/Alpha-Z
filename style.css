@@ -26,13 +26,24 @@ body {
 .navbar {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding-top: 10px;
 }
 
 .navbar #logo,
 .navbar .right-nav {
 	align-self: center;
+}
+
+.navbar #logo a {
+	color: #ff4d00;
+}
+
+.navbar #logo a:link,
+.navbar #logo a:visited,
+.navbar #logo a:hover,
+.navbar #logo a:active {
+	text-decoration: none;
 }
 
 nav ul {
@@ -76,10 +87,6 @@ nav ul li a:hover {
 	justify-content: space-between;
 	align-items: center;
 	gap: 5px;
-}
-
-.navbar #logo {
-	color: #ff4d00;
 }
 
 .header hr {
@@ -286,6 +293,23 @@ footer #footer-column ul {
 	align-items: center;
 	justify-content: space-between;
 	gap: 10px;
+}
+
+.sidepanel .panelDiv .panelNav form {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.sidepanel .panelDiv .panelNav a:link,
+.sidepanel .panelDiv .panelNav a:visited,
+.sidepanel .panelDiv .panelNav a:hover,
+.sidepanel .panelDiv .panelNav a:active {
+	text-decoration: none;
+	color: white;
+}
+
+.sidepanel .error {
+	border: 1px solid red;
 }
 
 .sidepanel .panelDiv .panelNav img {

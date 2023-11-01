@@ -6,15 +6,32 @@
 
 #body table {
 	width: 100%;
+	font-size: larger;
+	column-gap: 20px;
 }
 
 #body td:nth-child(1) {
 	color: grey;
-	padding-right: 60px;
 }
 
 #body tr td {
 	padding-top: 20px;
+}
+
+#body tr td .editspace {
+	background-color: black;
+	color: white;
+	border: none;
+	font-size: medium;
+	position: static;
+}
+
+#body tr td textarea {
+	max-width: 320px;
+}
+
+#body tr td .editspace:focus {
+	outline: none;
 }
 
 #body form button {
