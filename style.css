@@ -308,6 +308,10 @@ footer #footer-column ul {
 	color: white;
 }
 
+.sidepanel .error {
+	border: 1px solid red;
+}
+
 .sidepanel .panelDiv .panelNav img {
 	width: 20px;
 }

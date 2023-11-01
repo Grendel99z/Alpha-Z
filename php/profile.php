@@ -2,13 +2,14 @@
 session_start();
 // Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
-    // Redirect to the login page
+   
     if(isset($_SERVER['HTTP_REFERER'])) {
-        if ($_SERVER['HTTP_REFERER'] === 'http://localhost:8080/alphaZ/Alpha-z/php/profile.php') {
+        if ($_SERVER['HTTP_REFERER'] == 'http://localhost:8888/alphaZ/Alpha-z/php/profile.php') {
             header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php
             ');
             exit();
         }
+        header('Location: '.$_SERVER['HTTP_REFERER']);
     } else {
         // Redirect to a default page if HTTP_REFERER is not set
         header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php');
