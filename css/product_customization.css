@@ -22,6 +22,11 @@
 	max-width: 400px;
 }
 
+#body #productImage .imagesOptions {
+	width: 80%;
+	max-width: 100px;
+}
+
 #body #productDetails {
 	width: 80%;
 	max-width: 400px;
