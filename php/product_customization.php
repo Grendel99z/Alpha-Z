@@ -7,8 +7,7 @@
 	</head>
 	<?php
 		$product_name = $_GET['product'];
-		$type = $_GET['type'];
-		if (!isset($product_name) || !isset($type)){
+		if (!isset($product_name)){
 			if($_SERVER['HTTP_REFERER'] == 'http://localhost:8888/alphaZ/Alpha-z/php/product_customization.php' || $_SERVER['HTTP_REFERER'] == ''){
 				header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php');
 				exit();
@@ -25,7 +24,7 @@
 				header('Location: '.$_SERVER['HTTP_REFERER']);
 			}
 
-			$stmt = "SELECT * FROM Products WHERE type = '$type' AND name = '$product_name'";
+			$stmt = "SELECT * FROM Products WHERE name = '$product_name'";
 			$result = $db->query($stmt);
 			if($result){
 				$product = $result->fetch_assoc();
@@ -87,39 +86,39 @@
 					<br />
 
 				<?php 
-					if($type !='Laptop'){
-					echo '<p>Selection</p>';
-					echo '<div id="product_customization_selection">
-							<input
-								type="radio"
-								id="product_customization_01"
-								name="product_customization"
-								value="product_customization_01"
-								checked
-							/>
-							<label for="product_customization_01">
-								<p>choice 1</p>
-							</label>
-							<input
-								type="radio"
-								id="product_customization_02"
-								name="product_customization"
-								value="product_customization_02"
-							/>
-							<label for="product_customization_02">
-								<p>choice 2</p>
-							</label>
-							<input
-								type="radio"
-								id="product_customization_03"
-								name="product_customization"
-								value="product_customization_03"
-							/>
-							<label for="product_customization_03">
-								<p>choice 3</p>
-							</label>
-						</div>';
-					}
+					// if($type !='Laptop'){
+					// echo '<p>Selection</p>';
+					// echo '<div id="product_customization_selection">
+					// 		<input
+					// 			type="radio"
+					// 			id="product_customization_01"
+					// 			name="product_customization"
+					// 			value="product_customization_01"
+					// 			checked
+					// 		/>
+					// 		<label for="product_customization_01">
+					// 			<p>choice 1</p>
+					// 		</label>
+					// 		<input
+					// 			type="radio"
+					// 			id="product_customization_02"
+					// 			name="product_customization"
+					// 			value="product_customization_02"
+					// 		/>
+					// 		<label for="product_customization_02">
+					// 			<p>choice 2</p>
+					// 		</label>
+					// 		<input
+					// 			type="radio"
+					// 			id="product_customization_03"
+					// 			name="product_customization"
+					// 			value="product_customization_03"
+					// 		/>
+					// 		<label for="product_customization_03">
+					// 			<p>choice 3</p>
+					// 		</label>
+					// 	</div>';
+					// }
 				?>
 				</div>
 			</div>
