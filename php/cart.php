@@ -10,12 +10,12 @@
 		<div class="wrapper">
 			<div id="header">
 				<?php
-					include_once 'header.php';
+					include_once 'components/header.php';
 				?>
 			</div>
 			<div id="defaultSidePane">
 					<?php
-						include 'sidePane.php';
+						include 'components/sidePane.php';
 					?>
 			</div>
 			<div id="body">

@@ -6,7 +6,7 @@ const defaultSidePaneTemplate = `
     </div>
     <hr>
     <h3>Please Log in into your profile</h3>
-    <form method="post" onSubmit="return validateLogIn()" action="sign_in.php">
+    <form method="post" onSubmit="return validateLogIn()" action="server/sign_in.php">
     <input type="email" name="email" id="logIn-email" placeholder="email">
     <input type="password" name="password" id="logIn-password" placeholder="password">
     <button type="submit" id="login-button" >Log In</button>
@@ -23,7 +23,7 @@ const signUpTemplate = `
     </div>
     <hr>
     <h3>Please Sign Up for new profile</h3>
-    <form method="post" onSubmit="return validateSignUp()" action="sign_up.php">
+    <form method="post" onSubmit="return validateSignUp()" action="server/sign_up.php">
     <input  type="email" name="email" id="signUp-email" placeholder="Email">
     <input  type="text" name="firstName" id="signUp-first-name" placeholder="First Name">
     <input  type="text" name="lastName" id="signUp-last-name" placeholder="Last Name">

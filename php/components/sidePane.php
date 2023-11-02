@@ -20,7 +20,7 @@ if (isset($_SESSION["user_id"])){
     echo '<div class = "panelNav">';
     echo '<img src="../assets/logOut.png" class="panelIcon"/>';
     echo '<p>Log Out</p>';
-    echo '<form method="post" action="log_out.php">';
+    echo '<form method="post" action="server/log_out.php">';
     echo '<input type="hidden" name="log_out" value="true"/>';
     echo '<a onClick="this.parentNode.submit();">></a>';
     echo '</form>';
