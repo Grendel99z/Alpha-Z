@@ -7,28 +7,40 @@
 	</head>
 
 	<body>
-	<div id="banner">
+		<div class="wrapper">
+			<div id="header">
+				<?php
+					include_once 'components/header.php';
+				?>
+			</div>
+			<div id="defaultSidePane">
+					<?php
+						include 'components/sidePane.php';
+					?>
+			</div>
+			<div id="body">
+			<div id="banner">
 					<!-- image of nice nice pcs laptops and accessories-->
 					<img src="../banner.jpg" width="1509px" height="500px" />
 				</div>
 
 				<div id="underbanner">
-					<img src="../assets/zenith1.png" width="370px" height="400px" />
+					<img src="../assets/products/PC/zenith1.png" width="370px" height="400px" />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<img src="../assets/titan3.jpg" width="370px" height="400px" />
+					<img src="../assets/products/Laptops/titan1.jpg" width="370px" height="400px" />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<img src="../assets/accessories1.jpg" width="370px" height="400px" />
 
 					<br /><br />
 				</div>
 				<div class="product-list-container">
-					<div id="pc"><a href="../PCs.php">PCs</a></div>
-					<div id="laptop"><a href="../Laptops.php">LAPTOPS</a></div>
-					<div id="accessories"><a href="../Accessories.php">ACCESSORIES</a></div>
+					<div id="pc"><a href="../php/PCs.php">PCs</a></div>
+					<div id="laptop"><a href="../php/Laptops.php">LAPTOPS</a></div>
+					<div id="accessories"><a href="../php/Accessories.php">ACCESSORIES</a></div>
 				</div>
 
 				<div id="rectangle1">
-					<br /><br />
+					<br /><br /><br /><br />
 
 					<div id="textarea">
 						<div id="textareatitle">ELEVATE</div><br><br>
@@ -49,20 +61,15 @@
 						<br /><br /><br />
 					</div>
 
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-					<img src="../assets/leagueandapex.jpg" width="690px" height="500px" />
-				</div>
+					<img src="../assets/leagueandapex.jpg" width="600px" height="500px" />
+				</div><br /><br /><br /><br /><br /><br /><br />
 
 				<div id="rectangle2">
-					<br /><br />
-					<img src="../assets/zenith2.png" width="700px" height="550px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+					<br /><br /><br /><br /><br />
+					<img src="../assets/products/PC/zenith2.png" width="650px" height="525px" />
 
 					<div id="textarea2">
-						<br /><br /><br />
+						<br /><br />
                         <div id="textareatitle2">INFUSION</div><br><br>
 						"At Alpha-Z, we specialize in infusing a personalized essence into
 						your PC,<br /><br />
@@ -74,7 +81,7 @@
 						once-impossible ideas into reality.<br /><br />
 						If you have a vision, theme, artwork, or concept in mind, allow us
 						to collaborate with you in bringing it to life."
-					</div>
+					</div> </div>
                     
 					<div id="makespace"></div>
 					<div id="hr">
@@ -97,9 +104,9 @@
 						<div class="mySlides fade">
 						<div class="numbertext">1 / 3</div>
 
-						<img src="../assets/destroyer1.png" style="width:33%">
-						<img src="../assets/titan2.jpg" style="width:33%">
-						<img src="../assets/titanium1.png" style="width:33%">
+						<img src="../assets/products/accessories/mouse/destroyer1.png" style="width:33%">
+						<img src="../assets/products/Laptops/titan2.jpg" style="width:33%">
+						<img src="../assets/products/accessories/keyboard/titanium1.png" style="width:33%">
 
 						<div class="hotsalesname">
 						<h3 class="product-title">Destroyer 1</h3>
@@ -117,9 +124,9 @@
 					
 						<div class="mySlides fade">
 						<div class="numbertext">2 / 3</div>
-						<img src="../assets/titanium2.png" style="width:33%">
-						<img src="../assets/emerald2.png" style="width:33%">
-						<img src="../assets/destroyer2.png" style="width:33%">
+						<img src="../assets/products/accessories/keyboard/titanium2.png" style="width:33%">
+						<img src="../assets/products/accessories/headset/emerald2.png" style="width:33%">
+						<img src="../assets/products/accessories/mouse/destroyer2.png" style="width:33%">
 
 						<div class="hotsalesname">
 							<h3 class="product-title">Titanium 2</h3>
@@ -135,9 +142,9 @@
 					
 						<div class="mySlides fade">
 						<div class="numbertext">3 / 3</div>
-						<img src="../assets/diamond1.png" style="width:33%">
-						<img src="../assets/diamond2.png" style="width:33%">
-						<img src="../assets/platinum2.png" style="width:33%">
+						<img src="../assets/products/accessories/webCam/diamond1.png" style="width:33%">
+						<img src="../assets/products/accessories/webCam/diamond2.png" style="width:33%">
+						<img src="../assets/products/accessories/Mic/platinum2.png" style="width:33%">
 
 						<div class="hotsalesname">
 							<h3 class="product-title">Diamond 1</h3>
@@ -172,4 +179,5 @@
 	</body>
 	<script src="../js/sidePane.js"></script>
 	<script src="../js/footer.js"></script>
+	<script defer src="../js/sliderhomepage.js"></script>
 </html>
