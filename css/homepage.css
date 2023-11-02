@@ -11,16 +11,16 @@
 }
 
 #rectangle1 {
-	float: right;
-	padding-top: 20px;
-	font-size: 20px;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 0px;
+	margin-top: 350px;
 }
 
 #textarea {
 	width: 600px;
 	height: 450px;
 	font-size: 19px;
-	float: left;
 }
 
 #textareatitle {
@@ -47,10 +47,9 @@
 
 #textarea2 {
 	width: 600px;
-	height: 520px;
+	height: 500px;
 	font-size: 21px;
-	float: right;
-	margin-top: 180px;
+
 }
 
 #lasttextarea { 
@@ -59,16 +58,17 @@
 }
 
 #rectangle2 {
-	float: left;
-	margin-top: 150px;
-	margin-left: 50px;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 10px;
+    margin-top:250px;
 }
 
 #makespace {
-	margin-top: 1500px;
+	margin-top: 350px;
 }
 
-#makespace1 { margin-top: 100px;}
+#makespace1 { margin-top: 75px;}
 
 #hr {
 	text-align: center;
