@@ -53,7 +53,7 @@
 			<div id="body">
 			<div id="productContent">
 					<div>
-						<img src="../assets/products/PC/zenith1.png" />
+						<img src="../assets/products/<?php echo $picture ?>" />
 					</div>
 					<div>
 						<div id="productDetails">
