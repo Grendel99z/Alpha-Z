@@ -40,7 +40,7 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/zenith1.png"
+								src="../assets/products/PC/zenith1.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"
@@ -52,7 +52,7 @@
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/zenith2.png"
+								src="../assets/products/PC/zenith2.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"
@@ -69,7 +69,7 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/zenith3.png"
+								src="../assets/products/PC/zenith3.png"
 								width="435px"
 								height="400px"
 								alt="Product Name"
@@ -81,7 +81,7 @@
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/zenith4.png"
+								src="../assets/products/PC/zenith4.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"
@@ -107,7 +107,7 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/zenith5.png"
+								src="../assets/products/PC/zenith5.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"
@@ -119,7 +119,7 @@
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/zenith6.png"
+								src="../assets/products/PC/zenith6.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"

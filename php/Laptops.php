@@ -41,7 +41,7 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/titan1.jpg"
+								src="../assets/products/Laptops/titan1.jpg"
 								width="450px"
 								height="375px"
 								alt="Product Name"
@@ -53,7 +53,7 @@
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/titan2.jpg"
+								src="../assets/products/Laptops/titan2.jpg"
 								width="450px"
 								height="375px"
 								alt="Product Name"
@@ -70,7 +70,7 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/titan3.jpg"
+								src="../assets/products/Laptops/titan3.jpg"
 								width="450px"
 								height="315px"
 								alt="Product Name"
@@ -82,7 +82,7 @@
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/titan4.jpg"
+								src="../assets/products/Laptops/titan4.jpg"
 								width="450px"
 								height="315px"
 								alt="Product Name"
@@ -109,7 +109,7 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/titan5.png"
+								src="../assets/products/Laptops/titan5.png"
 								width="450px"
 								height="355px"
 								alt="Product Name"
@@ -121,7 +121,7 @@
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/titan6.png"
+								src="../assets/products/Laptops/titan6.png"
 								width="450px"
 								height="355px"
 								alt="Product Name"
