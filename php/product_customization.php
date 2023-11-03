@@ -1,3 +1,16 @@
+<?php
+session_start(); // Start the session
+
+$product_name = $_GET['product'];
+if (!isset($product_name)) {
+    if ($_SERVER['HTTP_REFERER'] == 'http://localhost:8888/alphaZ/Alpha-z/php/product_customization.php' || $_SERVER['HTTP_REFERER'] == '') {
+        header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php');
+        exit();
+    }
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+} ?>
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -36,6 +49,21 @@
 			} else {
 				$_SESSION['error'] = 'There was an error getting your information!';
 				header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php');
+			}
+
+			if (isset($_POST['add_to_cart'])) {
+				// Check if the 'Add to Cart' button was clicked
+				if (!isset($_SESSION['cart'])) {
+					$_SESSION['cart'] = array(); // Initialize the cart session variable if it doesn't exist
+				}
+				// After fetching product details from the database, add the image filename to the session
+				$_SESSION['cart'][] = array(
+					'id' => $product['id'],
+					'name' => $product['name'],
+					'price' => $product['price'],
+					'image' => $product['picture'], // Add the image filename
+				);
+
 			}
 		?>
 		<div class="wrapper">
@@ -130,9 +158,12 @@
 				</div>
 				<p id="productTotal">$ <?php echo $price; ?></p>
 				<div id="addToCart">
-					<button onClick="console.log('test')" id="addToCartButton">
+				<form method="post" action="">
+					<input type="hidden" name="add_to_cart" value="1">
+					<button type="submit" id="addToCartButton">
 						Add to Cart
 					</button>
+				</form>
 				</div>
 			</div>
 		</div>
