@@ -1,3 +1,40 @@
+<?php
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve user input
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $comments = $_POST["comments"];
+
+    // Database connection settings
+    $host = 'localhost';
+    $user = 'root';
+    $pass = '';
+    $db = 'db';
+
+    // Create a database connection
+    $db = new mysqli($host, $user, $pass, $db);
+
+    // Check connection
+    if ($db->connect_error) {
+        echo 'Error: Could not connect to the database. Please try again later.';
+        exit();
+    }
+
+    // Insert the user input into the database
+    $insertQuery = "INSERT INTO feedback (name, email, comments) VALUES ('$name', '$email', '$comments')";
+
+    if ($db->query($insertQuery)) {	
+		echo "<script>alert('Feedback submitted!')</script>";
+    } else {
+        echo "Error: " . $db->error;
+    }
+
+    // Close the database connection
+    $db->close();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -72,7 +109,7 @@
 					</div>
 					<br /><br />
 					<div id="feedbackform">
-						<form action="show_post.php" method="post" id="feedback-form">
+						<form action="contact.php" method="post" id="feedback-form">
 							<fieldset><legend>Customer Information</legend>
 							<table class="contact">
 								<tr class="contact-item">

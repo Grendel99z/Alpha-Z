@@ -6,7 +6,7 @@ CREATE TABLE `Products` (
     `details` VARCHAR(255) NOT NULL,
     `picture` VARCHAR(255) NOT NULL,
     `id` INT NOT NULL AUTO_INCREMENT,
-    PRIMARY KEY (`id`)
+    PRIMARY KEY (`id`) );
 
 INSERT INTO Products
 (name, type, price, quantity, details, picture)
