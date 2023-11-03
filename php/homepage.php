@@ -114,9 +114,9 @@
 						<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GProx</h3></div>
 								
                         <div class="hotsalesprice">
-							<p class="product-price">$30.00</p>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1100.00</p>
-							<p class="product-price">$70.00</p></div>
+							<p class="product-price">$70.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$950.00</p>
+							<p class="product-price">$130.00</p></div>
 							
 						<div class="text">HOT SALES 1</div>
 						
@@ -134,9 +134,9 @@
 							<h3 class="product-title">DeathAdder</h3></div>
 									
 						<div class="hotsalesprice">
-							<p class="product-price">$75.00</p>
-							<p class="product-price">$85.00</p>
-							<p class="product-price">$35.00</p></div>
+							<p class="product-price">$60.00</p>
+							<p class="product-price">$80.00</p>
+							<p class="product-price">$50.00</p></div>
 						<div class="text">HOT SALES 2</div>
 						</div>
 					
@@ -152,9 +152,9 @@
 							<h3 class="product-title">Yeti</h3></div>
 									
 						<div class="hotsalesprice">
-							<p class="product-price">$90.00</p>
-							<p class="product-price">$95.00</p>
-							<p class="product-price">$55.00</p></div>
+							<p class="product-price">$2500.00</p>
+							<p class="product-price">$1500.00</p>
+							<p class="product-price">$130.00</p></div>
 						<div class="text">HOT SALES 3</div>
 						</div>
 					
