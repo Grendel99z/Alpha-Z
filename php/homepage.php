@@ -25,9 +25,9 @@
 				</div>
 
 				<div id="underbanner">
-					<img src="../assets/products/PC/zenith1.png" width="370px" height="400px" />
+					<img src="../assets/products/PC/zenith.png" width="370px" height="400px" />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<img src="../assets/products/Laptops/titan1.jpg" width="370px" height="400px" />
+					<img src="../assets/products/Laptop/pavilion.png" width="370px" height="400px" />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<img src="../assets/accessories1.jpg" width="370px" height="400px" />
 
@@ -66,7 +66,7 @@
 
 				<div id="rectangle2">
 					<br /><br /><br /><br /><br />
-					<img src="../assets/products/PC/zenith2.png" width="650px" height="525px" />
+					<img src="../assets/products/PC/horizon.png" width="650px" height="525px" />
 
 					<div id="textarea2">
 						<br /><br />
@@ -104,19 +104,19 @@
 						<div class="mySlides fade">
 						<div class="numbertext">1 / 3</div>
 
-						<img src="../assets/products/accessories/mouse/destroyer1.png" style="width:33%">
-						<img src="../assets/products/Laptops/titan2.jpg" style="width:33%">
-						<img src="../assets/products/accessories/keyboard/titanium1.png" style="width:33%">
+						<img src="../assets/products/accessories/mouse/GPro.png" style="width:33%">
+						<img src="../assets/products/Laptop/envy.png" style="width:33%">
+						<img src="../assets/products/accessories/keyboard/GProX2.png" style="width:33%">
 
 						<div class="hotsalesname">
-						<h3 class="product-title">Destroyer 1</h3>
-						<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;Titan 2</h3>
-						<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Titanium 1</h3></div>
+						<h3 class="product-title">GPro</h3>
+						<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;envy</h3>
+						<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GProx</h3></div>
 								
                         <div class="hotsalesprice">
-							<p class="product-price">$30.00</p>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1100.00</p>
-							<p class="product-price">$70.00</p></div>
+							<p class="product-price">$70.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$950.00</p>
+							<p class="product-price">$130.00</p></div>
 							
 						<div class="text">HOT SALES 1</div>
 						
@@ -124,37 +124,37 @@
 					
 						<div class="mySlides fade">
 						<div class="numbertext">2 / 3</div>
-						<img src="../assets/products/accessories/keyboard/titanium2.png" style="width:33%">
-						<img src="../assets/products/accessories/headset/emerald2.png" style="width:33%">
-						<img src="../assets/products/accessories/mouse/destroyer2.png" style="width:33%">
+						<img src="../assets/products/accessories/keyboard/G213.png" style="width:33%">
+						<img src="../assets/products/accessories/headset/Kraken.png" style="width:33%">
+						<img src="../assets/products/accessories/mouse/DeathAdder2.png" style="width:33%">
 
 						<div class="hotsalesname">
-							<h3 class="product-title">Titanium 2</h3>
-							<h3 class="product-title">Emerald 2</h3>
-							<h3 class="product-title">Destroyer 2</h3></div>
+							<h3 class="product-title">G213</h3>
+							<h3 class="product-title">Kraken</h3>
+							<h3 class="product-title">DeathAdder</h3></div>
 									
 						<div class="hotsalesprice">
-							<p class="product-price">$75.00</p>
-							<p class="product-price">$85.00</p>
-							<p class="product-price">$35.00</p></div>
+							<p class="product-price">$60.00</p>
+							<p class="product-price">$80.00</p>
+							<p class="product-price">$50.00</p></div>
 						<div class="text">HOT SALES 2</div>
 						</div>
 					
 						<div class="mySlides fade">
 						<div class="numbertext">3 / 3</div>
-						<img src="../assets/products/accessories/webCam/diamond1.png" style="width:33%">
-						<img src="../assets/products/accessories/webCam/diamond2.png" style="width:33%">
-						<img src="../assets/products/accessories/Mic/platinum2.png" style="width:33%">
+						<img src="../assets/products/Laptop/stream.png" style="width:33%">
+						<img src="../assets/products/Laptop/elitebook.png" style="width:33%">
+						<img src="../assets/products/accessories/mic/Yeti.png" style="width:33%">
 
 						<div class="hotsalesname">
-							<h3 class="product-title">Diamond 1</h3>
-							<h3 class="product-title">Diamond 2</h3>
-							<h3 class="product-title">Platinum 2</h3></div>
+							<h3 class="product-title">stream</h3>
+							<h3 class="product-title">elitebook</h3>
+							<h3 class="product-title">Yeti</h3></div>
 									
 						<div class="hotsalesprice">
-							<p class="product-price">$90.00</p>
-							<p class="product-price">$95.00</p>
-							<p class="product-price">$55.00</p></div>
+							<p class="product-price">$2500.00</p>
+							<p class="product-price">$1500.00</p>
+							<p class="product-price">$130.00</p></div>
 						<div class="text">HOT SALES 3</div>
 						</div>
 					
