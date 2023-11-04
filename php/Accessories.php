@@ -61,26 +61,26 @@
 				<div class="container">
 					<div class="filterDiv Mouse">
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=DeathAdder"
 								><img
-									src="../assets/destroyer1.png"
+									src="../assets/products/accessories/mouse/DeathAdder2.png"
 									width="400px"
 									height="400px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Destroyer 1</h3>
-							<p class="product-price">$30.00</p>
+							<h3 class="product-title">DeathAdder</h3>
+							<p class="product-price">$50.00</p>
 						</div>
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=G Pro"
 								><img
-									src="../assets/destroyer2.png"
+									src="../assets/products/accessories/mouse/GPro.png"
 									width="400px"
 									height="400px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Destroyer 2</h3>
-							<p class="product-price">$35.00</p>
+							<h3 class="product-title">G Pro</h3>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$70.00</p>
 						</div>
 					</div>
 				</div>
@@ -88,26 +88,26 @@
 				<div class="container">
 					<div class="filterDiv Keyboard">
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=G213"
 								><img
-									src="../assets/titanium1.png"
+									src="../assets/products/accessories/keyboard/G213.png"
 									width="400px"
-									height="400px"
+									height="300px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Titanium 1</h3>
-							<p class="product-price">$70.00</p>
+							<h3 class="product-title">G213</h3>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</p>
 						</div>
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=G Pro X"
 								><img
-									src="../assets/titanium2.png"
+									src="../assets/products/accessories/keyboard/GProX2.png"
 									width="400px"
-									height="400px"
+									height="300px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Titanium 2</h3>
-							<p class="product-price">$75.00</p>
+							<h3 class="product-title">G Pro X</h3>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p>
 						</div>
 					</div>
 				</div>
@@ -115,26 +115,26 @@
 				<div class="container">
 					<div class="filterDiv Headset">
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=Cloud II"
 								><img
-									src="../assets/emerald1.png"
+									src="../assets/products/accessories/headset/CloudII.png"
 									width="400px"
 									height="400px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Emerald 1</h3>
-							<p class="product-price">$80.00</p>
+							<h3 class="product-title">CloudII</h3>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100.00</p>
 						</div>
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=Kraken"
 								><img
-									src="../assets/emerald2.png"
+									src="../assets/products/accessories/headset/Kraken.png"
 									width="400px"
 									height="400px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Emerald 2</h3>
-							<p class="product-price">$85.00</p>
+							<h3 class="product-title">Kraken</h3>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</p>
 						</div>
 					</div>
 				</div>
@@ -142,26 +142,26 @@
 				<div class="container">
 					<div class="filterDiv Webcam">
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=Brio"
 								><img
-									src="../assets/diamond1.png"
+									src="../assets/products/accessories/webCam/Brio1.png"
 									width="400px"
 									height="400px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Diamond 1</h3>
-							<p class="product-price">$90.00</p>
+							<h3 class="product-title">Brio</h3>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$200.00</p>
 						</div>
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=C920"
 								><img
-									src="../assets/diamond2.png"
+									src="../assets/products/accessories/webCam/C9201.png"
 									width="400px"
 									height="400px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Diamond 2</h3>
-							<p class="product-price">$95.00</p>
+							<h3 class="product-title">C920</h3>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</p>
 						</div>
 					</div>
 				</div>
@@ -169,26 +169,26 @@
 				<div class="container">
 					<div class="filterDiv Microphone">
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=Snowball"
 								><img
-									src="../assets/platinum1.png"
+									src="../assets/products/accessories/mic/Snowball4.png"
 									width="400px"
 									height="400px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Platinum 1</h3>
-							<p class="product-price">$50.00</p>
+							<h3 class="product-title">Snowball</h3>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$70.00</p>
 						</div>
 						<div class="product-card">
-							<a href=""
+							<a href="Product_customization.php?product=Yeti"
 								><img
-									src="../assets/platinum2.png"
+									src="../assets/products/accessories/mic/Yeti.png"
 									width="400px"
 									height="400px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">Platinum 2</h3>
-							<p class="product-price">$55.00</p>
+							<h3 class="product-title">Yeti</h3>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p>
 						</div>
 					</div>
 				</div>
@@ -198,4 +198,5 @@
 	</body>
 	<script src="../js/sidePane.js"></script>
 	<script src="../js/footer.js"></script>
+	<script src="../js/filteraccessories.js"></script>
 </html>
