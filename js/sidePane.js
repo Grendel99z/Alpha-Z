@@ -139,8 +139,8 @@ const validateLogIn = () => {
 	alert += validateEmail(emailInput);
 	alert += validatePassword(passwordInput);
 
-	window.alert(alert);
 	if (alert !== "") {
+		window.alert(alert);
 		isValid = false;
 	}
 
