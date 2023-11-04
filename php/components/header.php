@@ -36,13 +36,11 @@ session_start();
                     </div>
                     <div id = "cart">
                         <div id = "cart-logo">
-                            <a href="cart.html"><img src="../assets/cart.png"></a>
+                            <a href="cart.php"><img src="../assets/cart.png"></a>
                         </div>
                         <div id = "cart-content">
                             0
                         </div>
                     </div>
                 </div>
-            </div>
-            <hr>
         </div>

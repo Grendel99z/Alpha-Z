@@ -18,31 +18,31 @@ const footerTemplate = `
                 </div>
                 <div id = "footer-column">
                     <div id = "fc-pc">
-                        <p>Pcs</p>
-                        <ul>
-                            <li>PC1</li>
-                            <li>PC2</li>
-                            <li>PC3</li>
-                        </ul>
-                    </div>
-                    <div id = "fc-laptop">
-                        <p>Laptops</p>
-                        <ul>
-                            <li>Laptop1</li>
-                            <li>Laptop2</li>
-                            <li>Laptop3</li>
-                        </ul>
-                    </div>
-                    <div id = "fc-accessories">
-                            <p>Accessories</p>
+                        <p><a href="PCs.php">Pcs</a></p>
                             <ul>
-                                <li>Accessory1</li>
-                                <li>Accessory2</li>
-                                <li>Accessory3</li>
+                                <li><a href="PCDetails.php?pc=zenith">Zenith</a></li>
+                                <li><a href="PCDetails.php?pc=horizon">Horizon</a></li>
+                                <li><a href="PCDetails.php?pc=alpha">Alpha</a></li>
                             </ul>
-                    </div>
+                        </div>
+                        <div id="fc-laptop">
+                            <p><a href="laptops.php">Laptops</a></p>
+                            <ul>
+                                <li><a href="product_customization.php?product=spectre">Spectre</a></li>
+                                <li><a href="product_customization.php?product=pavilion">Pavilion</a></li>
+                                <li><a href="product_customization.php?product=stream">Stream</a></li>
+                            </ul>
+                        </div>
+                        <div id="fc-accessories">
+                            <p><a href="accessories.php">Accessories</a></p>
+                            <ul>
+                                <li><a href="product_customization.php?product=deathadder">DeathAdder</a></li>
+                                <li><a href="product_customization.php?product=G%20Pro%20X">G Pro X</a></li>
+                                <li><a href="product_customization.php?product=kraken">Kraken</a></li>
+                            </ul>
+                        </div>
                     <div id = "fc-contactus">
-                        <p>Contact Us</p>
+                        <p><a href="contact.php">Contact Us</a></p>
                     </div>
                 </div>
             </div>
