@@ -10,7 +10,6 @@ if (!isset($product_name)) {
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 } ?>
 
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -51,8 +50,10 @@ if (!isset($product_name)) {
 				header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php');
 			}
 
-			if (isset($_POST['add_to_cart'])) {
-				// Check if the 'Add to Cart' button was clicked
+			$canAddToCart = isset($_SESSION["user_id"]);
+
+			if (isset($_POST['add_to_cart']) && $canAddToCart) {
+				// Check if the 'Add to Cart' button was clicked and user is logged in
 				if (!isset($_SESSION['cart'])) {
 					$_SESSION['cart'] = array(); // Initialize the cart session variable if it doesn't exist
 				}
@@ -112,42 +113,6 @@ if (!isset($product_name)) {
 						<?php echo $details; ?>
 					</p>
 					<br />
-
-				<?php 
-					// if($type !='Laptop'){
-					// echo '<p>Selection</p>';
-					// echo '<div id="product_customization_selection">
-					// 		<input
-					// 			type="radio"
-					// 			id="product_customization_01"
-					// 			name="product_customization"
-					// 			value="product_customization_01"
-					// 			checked
-					// 		/>
-					// 		<label for="product_customization_01">
-					// 			<p>choice 1</p>
-					// 		</label>
-					// 		<input
-					// 			type="radio"
-					// 			id="product_customization_02"
-					// 			name="product_customization"
-					// 			value="product_customization_02"
-					// 		/>
-					// 		<label for="product_customization_02">
-					// 			<p>choice 2</p>
-					// 		</label>
-					// 		<input
-					// 			type="radio"
-					// 			id="product_customization_03"
-					// 			name="product_customization"
-					// 			value="product_customization_03"
-					// 		/>
-					// 		<label for="product_customization_03">
-					// 			<p>choice 3</p>
-					// 		</label>
-					// 	</div>';
-					// }
-				?>
 				</div>
 			</div>
 			<div id="footer"></div>
@@ -158,12 +123,16 @@ if (!isset($product_name)) {
 				</div>
 				<p id="productTotal">$ <?php echo $price; ?></p>
 				<div id="addToCart">
-				<form method="post" action="">
-					<input type="hidden" name="add_to_cart" value="1">
-					<button type="submit" id="addToCartButton">
-						Add to Cart
-					</button>
-				</form>
+				<?php if ($canAddToCart) { ?>
+					<form method="post" action="">
+						<input type="hidden" name="add_to_cart" value="1">
+						<button type="submit" id="addToCartButton">
+							Add to Cart
+						</button>
+					</form>
+				<?php } else { ?>
+					<button id="openSidePanelButton" onclick="openNav()" style="height: 40px;">Please login to add this product to your cart</button> 
+				<?php } ?>
 				</div>
 			</div>
 		</div>

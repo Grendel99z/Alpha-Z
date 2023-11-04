@@ -75,21 +75,25 @@ $conn->close();
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Alpha Z template</title>
-    <link rel="stylesheet" type="text/css" href="../style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/cart.css" />
-</head>
-<body>
-<div class="wrapper">
-    <div id="header">
-        <?php include_once 'header.php'; ?>
-    </div>
-    <div id="defaultSidePane">
-        <?php include 'sidePane.php'; ?>
-    </div>
+	<head>
+		<title>Alpha Z template</title>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/PCs.css" />
+	</head>
 
-    <div id="body">
+	<body>
+		<div class="wrapper">
+			<div id="header">
+				<?php
+					include_once 'components/header.php';
+				?>
+			</div>
+			<div id="defaultSidePane">
+					<?php
+						include 'components/sidePane.php';
+					?>
+			</div>
+			<div id="body">
         
         <div id="leftcolumn">
             <h1>Your cart</h1>
