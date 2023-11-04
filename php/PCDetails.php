@@ -33,7 +33,7 @@ if ($result) {
 
 $canAddToCart = isset($_SESSION["user_id"]);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_to_cart'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_to_cart']) && $quantity > 0) {
     // Add the product information to the session cart
     $_SESSION['cart'][] = array(
         'name' => $product['name'],

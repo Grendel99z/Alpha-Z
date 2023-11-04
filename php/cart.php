@@ -78,7 +78,7 @@ $conn->close();
 	<head>
 		<title>Alpha Z template</title>
 		<link rel="stylesheet" type="text/css" href="../style.css" />
-		<link rel="stylesheet" type="text/css" href="../css/PCs.css" />
+		<link rel="stylesheet" type="text/css" href="../css/cart.css" />
 	</head>
 
 	<body>

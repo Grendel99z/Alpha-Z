@@ -5,3 +5,6 @@ CREATE TABLE `user` (
     `address` VARCHAR(255) NOT NULL,
     `password` VARCHAR(255) NOT NULL,
     PRIMARY KEY (`id`));
+
+INSERT INTO user (name, email, address, password)
+VALUES ('rynard', 'alpha@hotmail.com', 'tampines', 'testing123');

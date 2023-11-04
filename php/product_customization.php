@@ -52,7 +52,7 @@ if (!isset($product_name)) {
 
 			$canAddToCart = isset($_SESSION["user_id"]);
 
-			if (isset($_POST['add_to_cart']) && $canAddToCart) {
+			if (isset($_POST['add_to_cart']) && $canAddToCart && $quantity > 0) {
 				// Check if the 'Add to Cart' button was clicked and user is logged in
 				if (!isset($_SESSION['cart'])) {
 					$_SESSION['cart'] = array(); // Initialize the cart session variable if it doesn't exist
