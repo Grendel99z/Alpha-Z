@@ -10,7 +10,19 @@ function filterSelection(c) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
+
+// Update the result count based on individual product cards
+updateResultCount();
 }
+
+function updateResultCount() {
+  var productCards = document.getElementsByClassName("product-card");
+  var shownProductCards = document.querySelectorAll('.filterDiv.show .product-card');
+
+  var resultCountText = shownProductCards.length + " results found";
+  document.getElementById("resultCount").textContent = resultCountText;
+}
+
 
 // Show filtered elements
 function w3AddClass(element, name) {

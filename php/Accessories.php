@@ -54,10 +54,11 @@
 							Microphones
 						</button>
 					</div>
-					<p>xx results found</p>
+					<p id="resultCount">Results found</p>
 				</div>
 
 				<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+				
 				<div class="container">
 					<div class="filterDiv Mouse">
 						<div class="product-card">
