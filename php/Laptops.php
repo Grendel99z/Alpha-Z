@@ -41,27 +41,27 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/products/Laptops/titan1.jpg"
+								src="../assets/products/Laptop/spectre.png"
 								width="450px"
 								height="375px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Titan 1</h3>
-							<p class="product-description">Titan 1 is suitable for tasks like office productivity, web<br>browsing, and even gaming.</p>
-							<p class="product-price">$1000.00</p>
-							<p class="product-button"><br>VIEW PRODUCT</p>
+							<h3 class="product-title">spectre</h3>
+							<p class="product-description">spectre is suitable for tasks like office productivity, web<br>browsing, and even gaming.</p>
+							<p class="product-price">$1200.00</p>
+							<p class="product-button"><br><a href="Product_customization.php?product=spectre">VIEW PRODUCT</a></p>
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/products/Laptops/titan2.jpg"
+								src="../assets/products/Laptop/envy.png"
 								width="450px"
 								height="375px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Titan 2</h3>
-							<p class="product-description">Titan 2 is suitable for tasks like multi-tasking, watching<br>movies, and even gaming.</p>
-							<p class="product-price">$1100.00</p>
-							<p class="product-button"><br>VIEW PRODUCT</p>
+							<h3 class="product-title">envy</h3>
+							<p class="product-description">envy is suitable for tasks like multi-tasking, watching<br>movies, and even gaming.</p>
+							<p class="product-price">$1300.00</p>
+							<p class="product-button"><br><a href="Product_customization.php?product=envy">VIEW PRODUCT</a></p>
 						</div>
 					</div>
 
@@ -70,27 +70,27 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/products/Laptops/titan3.jpg"
+								src="../assets/products/Laptop/pavilion.png"
 								width="450px"
 								height="315px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Titan 3</h3>
-							<p class="product-description">Titan 3 is a mid range laptop that can achieve quality gaming experience.</p>
-							<p class="product-price">$1200.00</p>
-							<p class="product-button"><br>VIEW PRODUCT</p>
+							<h3 class="product-title">pavilion</h3>
+							<p class="product-description">pavilion is a mid range laptop that can achieve quality gaming experience.</p>
+							<p class="product-price">$1400.00</p>
+							<p class="product-button"><br><a href="Product_customization.php?product=pavilion">VIEW PRODUCT</a></p>
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/products/Laptops/titan4.jpg"
+								src="../assets/products/Laptop/elitebook.png"
 								width="450px"
 								height="315px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Titan 4</h3>
-							<p class="product-description">Titan 4 is a mid range laptop for handling vigorous office applications,<br>and even gaming.</p>
-							<p class="product-price">$1300.00</p>
-							<p class="product-button"><br>VIEW PRODUCT</p>
+							<h3 class="product-title">elitebook</h3>
+							<p class="product-description">elitebook is a mid range laptop for handling vigorous office applications,<br>and even gaming.</p>
+							<p class="product-price">$1500.00</p>
+							<p class="product-button"><br><a href="Product_customization.php?product=elitebook">VIEW PRODUCT</a></p>
 						</div>
 					</div>
 				</div>
@@ -109,27 +109,27 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/products/Laptops/titan5.png"
+								src="../assets/products/Laptop/stream.png"
 								width="450px"
 								height="355px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Titan 5</h3>
-							<p class="product-description">Titan 5 is a high-end laptop that all gamers wish for,<br>it can handle all operations smoothly, especially gaming.</p>
-							<p class="product-price">$2000.00</p>
-							<p class="product-button"><br>VIEW PRODUCT</p>
+							<h3 class="product-title">stream</h3>
+							<p class="product-description">stream is a high-end laptop that all gamers wish for,<br>it can handle all operations smoothly, especially gaming.</p>
+							<p class="product-price">$2500.00</p>
+							<p class="product-button"><br><a href="Product_customization.php?product=stream">VIEW PRODUCT</a></p>
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/products/Laptops/titan6.png"
+								src="../assets/products/Laptop/boltbook.png"
 								width="450px"
 								height="355px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Titan 6</h3>
-							<p class="product-description">Titan 6 is a high-end laptop that all gamers wish for,<br>it can handle all operations exceptionally well, especially gaming.</p>
-							<p class="product-price">$2500.00</p>
-							<p class="product-button"><br>VIEW PRODUCT</p>
+							<h3 class="product-title">boltbook</h3>
+							<p class="product-description">boltbook is a high-end laptop that all gamers wish for,<br>it can handle all operations exceptionally well, especially gaming.</p>
+							<p class="product-price">$3000.00</p>
+							<p class="product-button"><br><a href="Product_customization.php?product=boltbook">VIEW PRODUCT</a></p>
 						</div>
 					</div>
 				</div>

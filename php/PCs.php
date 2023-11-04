@@ -40,27 +40,27 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/products/PC/zenith1.png"
+								src="../assets/products/PC/zenith.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Zenith 1</h3>
-							<p class="product-description">Zenith 1 is suitable for tasks like office productivity,<br> web browsing, and even gaming.</p>
+							<h3 class="product-title">zenith</h3>
+							<p class="product-description">zenith is suitable for tasks like office productivity,<br> web browsing, and even gaming.</p>
 							<p class="product-price">$1500.00</p>
-							<p class="product-button"><br>CUSTOMIZE</p>
+							<p class="product-button"><br><a href="PCDetails.php?pc=zenith">CUSTOMIZE</a></p>
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/products/PC/zenith2.png"
+								src="../assets/products/PC/horizon.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Zenith 2</h3>
-							<p class="product-description">Zenith 2 is suitable for tasks like multi-tasking, watching<br>movies, and even gaming.</p>
+							<h3 class="product-title">horizon</h3>
+							<p class="product-description">horizon is suitable for tasks like multi-tasking, watching<br>movies, and even gaming.</p>
 							<p class="product-price">$1600.00</p>
-							<p class="product-button"><br>CUSTOMIZE</p>
+							<p class="product-button"><br><a href="PCDetails.php?pc=horizon">CUSTOMIZE</a></p>
 						</div>
 					</div>
 
@@ -69,27 +69,27 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/products/PC/zenith3.png"
+								src="../assets/products/PC/nova.png"
 								width="435px"
 								height="400px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Zenith 3</h3>
-							<p class="product-description">Zenith 3 is a mid range PC that can achieve quality gaming<br> experience.</p>
+							<h3 class="product-title">nova</h3>
+							<p class="product-description">nova is a mid range PC that can achieve quality gaming<br> experience.</p>
 							<p class="product-price">$1700.00</p>
-							<p class="product-button"><br>CUSTOMIZE</p>
+							<p class="product-button"><br><a href="PCDetails.php?pc=nova">CUSTOMIZE</a></p>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/products/PC/zenith4.png"
+								src="../assets/products/PC/zenith-pro.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Zenith 4</h3>
-							<p class="product-description">Zenith 4 is a mid range PC for handling vigorous office applications,<br>and even gaming.</p>
+							<h3 class="product-title">zenith-pro</h3>
+							<p class="product-description">zenith-prois a mid range PC for handling vigorous office applications,<br>and even gaming.</p>
 							<p class="product-price">$1800.00</p>
-							<p class="product-button"><br>CUSTOMIZE</p>
+							<p class="product-button"><br><a href="PCDetails.php?pc=zenith pro">CUSTOMIZE</a></p>
 						</div>
 					</div>
 
@@ -107,27 +107,27 @@
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
-								src="../assets/products/PC/zenith5.png"
+								src="../assets/products/PC/alpha.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Zenith 5</h3>
-							<p class="product-description">Zenith 5 is a high-end PC that all gamers wish for,<br>it can handle all operations smoothly, especially gaming.</p>
+							<h3 class="product-title">alpha</h3>
+							<p class="product-description">alpha is a high-end PC that all gamers wish for,<br>it can handle all operations smoothly, especially gaming.</p>
 							<p class="product-price">$3000.00</p>
-							<p class="product-button"><br>CUSTOMIZE</p>
+							<p class="product-button"><br><a href="PCDetails.php?pc=alpha">CUSTOMIZE</a></p>
 						</div>&nbsp;
 						<div class="product-card">
 							<img
-								src="../assets/products/PC/zenith6.png"
+								src="../assets/products/PC/beta.png"
 								width="400px"
 								height="400px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">Zenith 6</h3>
-							<p class="product-description">Zenith 6 is a high-end PC that all gamers wish for,<br>it can handle all operations exceptionally well, especially gaming.</p>
+							<h3 class="product-title">beta</h3>
+							<p class="product-description">beta is a high-end PC that all gamers wish for,<br>it can handle all operations exceptionally well, especially gaming.</p>
 							<p class="product-price">$4000.00</p>
-							<p class="product-button"><br>CUSTOMIZE</p>
+							<p class="product-button"><br><a href="PCDetails.php?pc=beta">CUSTOMIZE</a></p>
 						</div>
 					</div>
 
