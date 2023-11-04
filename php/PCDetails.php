@@ -35,8 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
     // Add the product information to the session cart
     $_SESSION['cart'][] = array(
         'name' => $product['name'],
-	'price' => $product['price'],
-	'image' => $product['picture'], // Add the image filename
+        'price' => $product['price'],
+        'image' => $product['picture'], // Add the image filename
     );
 }
 ?>
@@ -291,7 +291,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
             <div id="addToCart">
                 <form method="post" action="">
                     <input type="hidden" name="add_to_cart" value="1">
-                    <button type="submit" id="addToCartButton">Add to Cart</button>
+                    <button type="submit" id="addToCartButton" style="width: 200px;">Add to Cart</button>
                 </form>
             </div>
         </div>

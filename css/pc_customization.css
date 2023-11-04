@@ -3,6 +3,8 @@
 	flex-direction: row;
 }
 
+.button {width: 250px;}
+
 #productContent img {
 	width: 80%;
 	top: 80px;
