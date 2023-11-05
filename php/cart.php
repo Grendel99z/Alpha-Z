@@ -1,5 +1,5 @@
 <?php
-error_reporting(0):
+error_reporting(0);
 // cart.php
 session_start();
 
@@ -129,7 +129,7 @@ $conn->close();
                 
                 ?>
                 <br>
-                <p><a href="catalog.php">Continue Shopping</a> or
+                <p><a href="homepage.php">Continue Shopping</a> or
                     <a href="<?php echo $_SERVER['PHP_SELF']; ?>?empty=1">Empty your cart</a></p>
                 </tbody>
             </table>
@@ -155,7 +155,12 @@ $conn->close();
 
                     <form action="thankyoupage.php" method="POST">
                         <input type="hidden" name="total" id="checkout-total" value="<?php echo $_SESSION['cart_total']; ?>">
-                        <input type="submit" name="submit" value="Proceed to Checkout">
+                        <?php
+                        if (count($_SESSION['cart']) > 0) {
+                            // Display the "Proceed to Checkout" button only when there are items in the cart
+                            echo '<input type="submit" name="submit" value="Proceed to Checkout">';
+                        }
+                        ?>
                     </form>
                    
         </div>

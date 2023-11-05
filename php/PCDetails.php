@@ -36,6 +36,7 @@ $canAddToCart = isset($_SESSION["user_id"]);
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_to_cart']) && $quantity > 0) {
     // Add the product information to the session cart
     $_SESSION['cart'][] = array(
+        'id' => $product['id'],
         'name' => $product['name'],
         'price' => $product['price'],
         'image' => $product['picture'], // Add the image filename
