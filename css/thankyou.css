@@ -56,3 +56,20 @@
 	margin-top: 2px;
 	border-top: 1px solid white;
 }
+
+/* Add CSS to center the return to homepage link */
+#returntohomepage {
+	text-align: center;
+	margin-top: 20px;
+}
+#returnToHomepageButton {
+    width: 200px;
+    height: 50px;
+    background-color: #8c0000; /* Change to your desired background color */
+    color: #fff; /* Text color */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+	margin-bottom: 50px;
+}
