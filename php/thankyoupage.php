@@ -29,6 +29,24 @@ $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
+// Loop through the cart items to insert records into the "records" table
+for ($i = 0; $i < count($_SESSION['cart']); $i++) {
+    $product_id = $_SESSION['cart'][$i]['id'];
+    $name = $_SESSION['cart'][$i]['name'];
+    $type = $_SESSION['cart'][$i]['type'];
+    $price = $_SESSION['cart'][$i]['price'];
+    $quantity_purchased = 1; // You may need to adjust this based on the actual quantity purchased
+
+    // Insert a record into the "records" table
+    $insert_query = "INSERT INTO records (name, price, type, quantity, date) VALUES ('$name', $price, '$type', $quantity_purchased, NOW())";
+
+    if ($conn->query($insert_query) !== TRUE) {
+        echo "Error inserting record for product with ID $product_id: " . $conn->error;
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>

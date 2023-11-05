@@ -45,6 +45,7 @@ if (!isset($product_name)) {
 				$details = $product['details'];
 				$picture = $product['picture'];
 				$quantity = $product['quantity'];
+				$type = $product['type'];
 			} else {
 				$_SESSION['error'] = 'There was an error getting your information!';
 				header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php');
@@ -63,6 +64,7 @@ if (!isset($product_name)) {
 					'name' => $product['name'],
 					'price' => $product['price'],
 					'image' => $product['picture'], // Add the image filename
+					'type'	=> $product['type']
 				);
 
 			}
