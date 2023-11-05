@@ -8,4 +8,3 @@ CREATE TABLE `user` (
     PRIMARY KEY (`id`));
 
 INSERT INTO user (name, email, phone_number, address, password)
-VALUES ('rynard', 'alpha@hotmail.com', '12345678', 'tampines', 'testing123');
