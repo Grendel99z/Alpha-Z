@@ -1,0 +1,9 @@
+CREATE TABLE `records` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(255) NOT NULL,
+    `type` VARCHAR(255) NOT NULL,
+    `price` FLOAT NOT NULL,
+    `quantity` INT NOT NULL,
+    `date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+);
