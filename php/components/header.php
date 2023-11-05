@@ -39,7 +39,7 @@ session_start();
                             <a href="cart.php"><img src="../assets/cart.png"></a>
                         </div>
                         <div id = "cart-content">
-                            0
+                          <?php echo count($_SESSION['cart']); ?>
                         </div>
                     </div>
                 </div>

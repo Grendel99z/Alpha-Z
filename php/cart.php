@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 // cart.php
 session_start();
 
@@ -119,6 +120,10 @@ $conn->close();
                     echo '</div>';
                     echo '</div>';
                     echo '</div>';
+
+                    // Add a horizontal line to separate cart items
+                    echo '<hr>';
+
                     $total = $total + $_SESSION['cart'][$i]['price'];
                 }
                 
@@ -153,13 +158,6 @@ $conn->close();
                         <input type="submit" name="submit" value="Proceed to Checkout">
                     </form>
                    
-                    
-                   <?php // After storing session data, FINDING OUT ERROR
-                    echo '<pre>';
-                    print_r($_SESSION); // Print the session data for debugging
-                    echo '</pre>'; ?>
-
-
         </div>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>

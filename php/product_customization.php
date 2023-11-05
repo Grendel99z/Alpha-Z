@@ -126,9 +126,7 @@ if (!isset($product_name)) {
 				<?php if ($canAddToCart) { ?>
 					<form method="post" action="">
 						<input type="hidden" name="add_to_cart" value="1">
-						<button type="submit" id="addToCartButton">
-							Add to Cart
-						</button>
+						<button type="submit" id="addToCartButton" style="width: 200px; height: 50px;">Add to Cart</button>
 					</form>
 				<?php } else { ?>
 					<button id="openSidePanelButton" onclick="openNav()" style="height: 40px;">Please login to add this product to your cart</button> 
