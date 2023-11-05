@@ -11,6 +11,24 @@ if (isset($_POST['clear_cart'])) {
     // Clear the cart
     $_SESSION['cart'] = array();
 }
+
+// Database connection settings
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$db = 'alphaz';
+
+$items = array();
+$prices = array();
+$images = array();
+
+// Create a database connection
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +80,20 @@ if (isset($_POST['clear_cart'])) {
                     echo '<hr>';
 
                     $total = $total + $_SESSION['cart'][$i]['price'];
-                } ?>
+   
+                } 
+                // Loop through the cart items to update product quantities in the database
+                for ($i = 0; $i < count($_SESSION['cart']); $i++) {
+                    $product_id = $_SESSION['cart'][$i]['id'];
+                    $quantity_purchased = 1; // You may need to adjust this based on the actual quantity purchased
+
+                    // Update the product quantity in the database
+                    $update_query = "UPDATE Products SET quantity = quantity - $quantity_purchased WHERE id = $product_id";
+                    if ($conn->query($update_query) !== TRUE) {
+                        echo "Error updating quantity for product with ID $product_id: " . $conn->error;
+                    }
+                }
+                ?>
 
                 <div id="priceSummary">
                     <table>
@@ -77,8 +108,8 @@ if (isset($_POST['clear_cart'])) {
     </div>
       <!-- Add a form to return to the homepage and clear the cart -->
                 <div id="returntohomepage">
-                    <form action=homepage.php method="post">
-                        <button type="submit" name="clear_cart" id="returnToHomepageButton">Click here to return to homepage</button>
+                    <form method="post" action="homepage.php">
+                    <button type="submit" name="clear_cart" id="returnToHomepageButton" onclick="<?php $_SESSION['cart'] = array(); ?>">Click here to Return to Homepage</button>
                     </form>
                 </div>
 
@@ -88,3 +119,7 @@ if (isset($_POST['clear_cart'])) {
 <script src="../js/sidePane.js"></script>
 <script src="../js/footer.js"></script>
 </html>
+<?php
+// Close the database connection
+$conn->close();
+?>
