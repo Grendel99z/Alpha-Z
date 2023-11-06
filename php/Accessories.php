@@ -69,7 +69,7 @@
 									height="400px"
 									alt="Product Name"
 							/></a>
-							<h3 class="product-title">DeathAdder</h3>
+							<h3 class="product-title">&nbsp;DeathAdder</h3>
 							<p class="product-price">$50.00</p>
 						</div>
 						<div class="product-card">
@@ -81,7 +81,7 @@
 									alt="Product Name"
 							/></a>
 							<h3 class="product-title">G Pro</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$70.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$70.00</p>
 						</div>
 					</div>
 				</div>
@@ -93,22 +93,22 @@
 								><img
 									src="../assets/products/accessories/keyboard/G213.png"
 									width="400px"
-									height="300px"
+									height="400px"
 									alt="Product Name"
 							/></a>
 							<h3 class="product-title">G213</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</p>
 						</div>
 						<div class="product-card">
 							<a href="Product_customization.php?product=G Pro X"
 								><img
 									src="../assets/products/accessories/keyboard/GProX2.png"
 									width="400px"
-									height="300px"
+									height="400px"
 									alt="Product Name"
 							/></a>
 							<h3 class="product-title">G Pro X</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p>
 						</div>
 					</div>
 				</div>
@@ -124,7 +124,7 @@
 									alt="Product Name"
 							/></a>
 							<h3 class="product-title">CloudII</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100.00</p>
 						</div>
 						<div class="product-card">
 							<a href="Product_customization.php?product=Kraken"
@@ -135,7 +135,7 @@
 									alt="Product Name"
 							/></a>
 							<h3 class="product-title">Kraken</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</p>
 						</div>
 					</div>
 				</div>
@@ -151,7 +151,7 @@
 									alt="Product Name"
 							/></a>
 							<h3 class="product-title">Brio</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$200.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$200.00</p>
 						</div>
 						<div class="product-card">
 							<a href="Product_customization.php?product=C920"
@@ -162,7 +162,7 @@
 									alt="Product Name"
 							/></a>
 							<h3 class="product-title">C920</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</p>
 						</div>
 					</div>
 				</div>
@@ -189,7 +189,7 @@
 									alt="Product Name"
 							/></a>
 							<h3 class="product-title">Yeti</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p>
 						</div>
 					</div>
 				</div>
