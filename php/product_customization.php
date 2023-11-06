@@ -118,22 +118,22 @@ if (!isset($product_name)) {
 				</div>
 			</div>
 			<div id="footer"></div>
-			<div id="customize_summary">
-				<div id="productTitle">
-					<h2><?php echo $name; ?></h2>
-					<p>quantity: <?php echo $quantity?></p>
-				</div>
-				<p id="productTotal">$ <?php echo $price; ?></p>
-				<div id="addToCart">
-				<?php if ($canAddToCart) { ?>
-					<form method="post" action="">
-						<input type="hidden" name="add_to_cart" value="1">
-						<button type="submit" id="addToCartButton" style="width: 200px; height: 50px;">Add to Cart</button>
-					</form>
-				<?php } else { ?>
-					<button id="openSidePanelButton" onclick="openNav()" style="height: 40px;">Please login to add this product to your cart</button> 
-				<?php } ?>
-				</div>
+		</div>
+		<div id="customize_summary">
+			<div id="productTitle">
+				<h2><?php echo $name; ?></h2>
+				<p>quantity: <?php echo $quantity?></p>
+			</div>
+			<p id="productTotal">$ <?php echo $price; ?></p>
+			<div id="addToCart">
+			<?php if ($canAddToCart) { ?>
+				<form method="post" action="">
+					<input type="hidden" name="add_to_cart" value="1">
+					<button type="submit" id="addToCartButton" style="width: 200px; height: 50px;">Add to Cart</button>
+				</form>
+			<?php } else { ?>
+				<button id="addToCartButton" onclick="window.alert('Please login to add this product to your cart'); openNav();">Add to cart</button>
+			<?php } ?>
 			</div>
 		</div>
 	</body>

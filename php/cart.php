@@ -96,79 +96,76 @@ $conn->close();
 			</div>
 			<div id="body">
         
-        <div id="leftcolumn">
-            <h1>Your cart</h1>
-            <p>Your shopping cart contains <?php echo count($_SESSION['cart']); ?> items.</p>
-            <br />
-            Not ready to checkout? Continue shopping <br /><br /><br />
-
-            <table border="1">
-                <tbody>
-                <?php
-                $total = 0;
-                for ($i = 0; $i < count($_SESSION['cart']); $i++) {
-                    echo '<div id="orderedItem">';
-                    echo '<div id="product">';
-                    echo '<div id="productImage">';
-                    echo '<img src="../assets/products/' . $_SESSION['cart'][$i]['image'] . '.png" style="width: 200px; height: 200px;" />'; // Adjust the width and height
-                    echo '</div>';
-                    echo '<div id="productDetails">';
-                    echo '<div>' . $_SESSION['cart'][$i]['name'] . '</div>'; // Display the product name
-                    echo '<div id="productPrice">';
-                    echo '<p>$' . number_format($_SESSION['cart'][$i]['price'], 2) . ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="' . $_SERVER['PHP_SELF'] . '?remove=' . $i . '">Remove</a></p>';
-                    echo '</div>';
-                    echo '</div>';
-                    echo '</div>';
-                    echo '</div>';
-
-                    // Add a horizontal line to separate cart items
-                    echo '<hr>';
-
-                    $total = $total + $_SESSION['cart'][$i]['price'];
-                }
-                
-                ?>
-                <br>
-                <p><a href="homepage.php">Continue Shopping</a> or
-                    <a href="<?php echo $_SERVER['PHP_SELF']; ?>?empty=1">Empty your cart</a></p>
-                </tbody>
-            </table>
-            <br><br><br>
-            Order information<br />
-                    <hr />
+                <div id="leftcolumn">
+                    <h1>Your cart</h1>
+                    <p>Your shopping cart contains <?php echo count($_SESSION['cart']); ?> items.</p>
                     <br />
-                    Return Policy
-                    <hr />
-                    <br />
+                    Not ready to checkout? Continue shopping <br /><br /><br />
 
-                    Shipping Options
-                    <hr />
-                    <br />
-                </div>
-
-        <div id="rightcolumn">
-                    <div id="priceSummary">
-                        <h1>Order Summary</h1>
-                        <br /><br />
-                        <div class="total">Total: $<?php echo number_format($total, 2); ?></div>
-                    </div><br><br><br><br><br>
-
-                    <form action="thankyoupage.php" method="POST">
-                        <input type="hidden" name="total" id="checkout-total" value="<?php echo $_SESSION['cart_total']; ?>">
+                    <table border="1">
+                        <tbody>
                         <?php
-                        if (count($_SESSION['cart']) > 0) {
-                            // Display the "Proceed to Checkout" button only when there are items in the cart
-                            echo '<input type="submit" name="submit" value="Proceed to Checkout">';
+                        $total = 0;
+                        for ($i = 0; $i < count($_SESSION['cart']); $i++) {
+                            echo '<div id="orderedItem">';
+                            echo '<div id="product">';
+                            echo '<div id="productImage">';
+                            echo '<img src="../assets/products/' . $_SESSION['cart'][$i]['image'] . '.png" style="width: 200px; height: 200px;" />'; // Adjust the width and height
+                            echo '</div>';
+                            echo '<div id="productDetails">';
+                            echo '<div>' . $_SESSION['cart'][$i]['name'] . '</div>'; // Display the product name
+                            echo '<div id="productPrice">';
+                            echo '<p>$' . number_format($_SESSION['cart'][$i]['price'], 2) . ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="' . $_SERVER['PHP_SELF'] . '?remove=' . $i . '">Remove</a></p>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+
+                            // Add a horizontal line to separate cart items
+                            echo '<hr>';
+
+                            $total = $total + $_SESSION['cart'][$i]['price'];
                         }
+                        
                         ?>
-                    </form>
-                   
-        </div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <br>
+                        <p><a href="homepage.php">Continue Shopping</a> or
+                            <a href="<?php echo $_SERVER['PHP_SELF']; ?>?empty=1">Empty your cart</a></p>
+                        </tbody>
+                    </table>
+                    <br><br><br>
+                    Order information<br />
+                            <hr />
+                            <br />
+                            Return Policy
+                            <hr />
+                            <br />
+
+                            Shipping Options
+                            <hr />
+                            <br />
+                        </div>
+
+                <div id="rightcolumn">
+                            <div id="priceSummary">
+                                <h1>Order Summary</h1>
+                                <br /><br />
+                                <div class="total">Total: $<?php echo number_format($total, 2); ?></div>
+                            </div><br><br><br><br><br>
+
+                            <form action="thankyoupage.php" method="POST">
+                                <input type="hidden" name="total" id="checkout-total" value="<?php echo $_SESSION['cart_total']; ?>">
+                                <?php
+                                if (count($_SESSION['cart']) > 0) {
+                                    // Display the "Proceed to Checkout" button only when there are items in the cart
+                                    echo '<input type="submit" name="submit" value="Proceed to Checkout">';
+                                }
+                                ?>
+                            </form>
+                        
+                    </div>
+               
             </div>
-        </div>
-    </div>
-</div>
 
 
 <div id="footer"></div>

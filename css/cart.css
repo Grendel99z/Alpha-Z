@@ -1,27 +1,27 @@
 /* CART CSS */
 #leftcolumn {
-    font-size: 20px;
-    margin-top: 50px;
-    margin-left: 30px;
-    width: 300px;
-    float: left; /* Float left to make room for the right column */
+	font-size: 20px;
+	margin-top: 50px;
+	margin-left: 30px;
+	width: 300px;
+	float: left; /* Float left to make room for the right column */
 }
 
 #rightcolumn {
-    position: fixed; /* Change position to fixed */
-    top: 200px; /* Adjust the top value as needed */
-    right: 150px; /* Adjust the right value as needed */
-    font-size: 21px;
-    width: 500px;
+	position: fixed; /* Change position to fixed */
+	top: 200px; /* Adjust the top value as needed */
+	right: 100px; /* Adjust the right value as needed */
+	font-size: 21px;
+	width: 500px;
 }
 
 form input[type="submit"] {
-    width: 200px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
-    background-color: #8c0000;
-    color: white; /* Text color */
-    border: none; /* Remove the default button border */
-    cursor: pointer;
-    font-size: 18px; /* Adjust the font size as needed */
-    margin: 10px auto; /* Center the button vertically */
+	width: 200px; /* Adjust the width as needed */
+	height: 50px; /* Adjust the height as needed */
+	background-color: #8c0000;
+	color: white; /* Text color */
+	border: none; /* Remove the default button border */
+	cursor: pointer;
+	font-size: 18px; /* Adjust the font size as needed */
+	margin: 10px auto; /* Center the button vertically */
 }

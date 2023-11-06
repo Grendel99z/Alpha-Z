@@ -280,7 +280,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                 </div>
             </div>
         </div>
-        <div id="footer"></div>
+    </div>
+    <div id="footer"></div>
         <div id="customize_summary">
             <div id="productTitle">
                 <h2><?php echo $name; ?></h2>
@@ -294,10 +295,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                         <button type="submit" id="addToCartButton" style="width: 200px; height: 50px;">Add to Cart</button>
                     </form>
                 <?php } else { ?>
-                    <button id="openSidePanelButton" onclick="openNav()" style="height: 40px;">Please login to add this product to your cart</button>
+                    <button id="addToCartButton" onclick="window.alert('Please login to add this product to your cart'); openNav();">Add to cart</button>
                 <?php } ?>
             </div>
-        </div>
     </div>
 </body>
 <script src="../js/sidePane.js"></script>
