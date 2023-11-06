@@ -32,12 +32,15 @@ if ($result) {
     header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php');
 }
 
-$canAddToCart = isset($_SESSION["user_id"]);
+$canAddToCart = isset($_SESSION["user_id"]) && $quantity > 0;
 
 // Initialize $totalCost before the conditional block
 $totalCost = $price;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_to_cart']) && $quantity > 0) {  
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart ) {  
+    if (!isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = array(); // Initialize the cart session variable if it doesn't exist
+    }
     // Add the product information to the session cart
     $_SESSION['cart'][] = array(
         'id' => $product['id'],
@@ -93,6 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                         </p>
                         <br />
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="RAM_01"
                             name="RAMSelection"
@@ -103,6 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                             <p>4GB Alpha DDR5</p>
                         </label>
                         <input
+                            onChange="updateTotalPrice()"
                             type="radio"
                             id="RAM_02"
                             name="RAMSelection"
@@ -113,6 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                             <p class="price">+$50.00</p>
                         </label>
                         <input
+                            onChange="updateTotalPrice()"
                             type="radio"
                             id="RAM_03"
                             name="RAMSelection"
@@ -134,6 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                         </p>
                         <br />
                         <input
+                            onChange="updateTotalPrice()"
                             type="radio"
                             id="OS_01"
                             name="OSSelections"
@@ -144,6 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                             <p>No Operating System</p>
                         </label>
                         <input
+                            onChange="updateTotalPrice()"
                             type="radio"
                             id="OS_02"
                             name="OSSelections"
@@ -165,6 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                         </p>
                         <br />
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="Storage_01"
                             name="StorageSelection"
@@ -175,6 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                             <p>500GB SSD</p>
                         </label>
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="Storage_02"
                             name="StorageSelection"
@@ -185,6 +195,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                             <p class="price">+$50.00</p>
                         </label>
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="Storage_03"
                             name="StorageSelection"
@@ -194,6 +205,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                             <p>1TB HDD</p>
                         </label>
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="Storage_04"
                             name="StorageSelection"
@@ -216,6 +228,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                         </p>
                         <br />
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="GPU_01"
                             name="GPUSelections"
@@ -226,6 +239,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                             <p>Alpha Core - 4GB</p>
                         </label>
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="GPU_02"
                             name="GPUSelections"
@@ -259,6 +273,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                         </p>
                         <br />
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="CL_01"
                             name="CLSelections"
@@ -269,6 +284,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                             <p>Case Lighting (None)</p>
                         </label>
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="CL_02"
                             name="CLSelections"
@@ -294,15 +310,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
             <p id="productTotal">$<?php echo $price ?></p>
 
             <div id="addToCart">
-                <?php if ($canAddToCart) { ?>
-                    <form method="post" action="">
-                        <input id="base_price" type="hidden" name="base_price" value=<?php echo $price;?>>
-                        <input id="total_price" type="hidden" name="price" value=<?php echo $price;?>>
-                        <button type="submit" id="addToCartButton" style="width: 200px; height: 50px;">Add to Cart</button>
-                    </form>
-                <?php } else { ?>
-                    <button id="addToCartButton" onclick="window.alert('Please login to add this product to your cart'); openNav();">Add to cart</button>
-                <?php } ?>
+                <?php if ($canAddToCart) {
+                    echo '<form method="post" action="">
+                            <input id="base_price" type="hidden" name="base_price" value="'.$price.'">
+                            <input id="total_price" type="hidden" name="price" value="'.$price.'">
+                            <button type="submit" id="addToCartButton" style="width: 200px; height: 50px;">Add to Cart</button>
+                        </form>';
+                } else { 
+                    echo '<button id="addToCartButton" onclick="window.alert(\'Please login to add this product to your cart\'); openNav();">Add to cart</button>';
+                 }?> 
             </div>
     </div>
 </body>
