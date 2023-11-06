@@ -47,7 +47,7 @@
 								alt="Product Name"
 							/>
 							<h3 class="product-title">spectre</h3>
-							<p class="product-description">spectre is suitable for tasks like office productivity, web<br>browsing, and even gaming.</p>
+							<p class="product-description">spectre is suitable for multi-tasking, content creation,<br> and more.</p>
 							<p class="product-price">$1200.00</p>
 							<p class="product-button"><br><a href="Product_customization.php?product=spectre">VIEW PRODUCT</a></p>
 						</div>&nbsp;
@@ -59,7 +59,7 @@
 								alt="Product Name"
 							/>
 							<h3 class="product-title">envy</h3>
-							<p class="product-description">envy is suitable for tasks like multi-tasking, watching<br>movies, and even gaming.</p>
+							<p class="product-description">envy is a high-performance laptop designed for gamers and power users, it handles tasks well.</p>
 							<p class="product-price">$1300.00</p>
 							<p class="product-button"><br><a href="Product_customization.php?product=envy">VIEW PRODUCT</a></p>
 						</div>
@@ -76,7 +76,7 @@
 								alt="Product Name"
 							/>
 							<h3 class="product-title">pavilion</h3>
-							<p class="product-description">pavilion is a mid range laptop that can achieve quality gaming experience.</p>
+							<p class="product-description">pavilion is a mid range laptop for handling vigorous office applications,<br>and even gaming.</p>
 							<p class="product-price">$1400.00</p>
 							<p class="product-button"><br><a href="Product_customization.php?product=pavilion">VIEW PRODUCT</a></p>
 						</div>&nbsp;
@@ -88,7 +88,7 @@
 								alt="Product Name"
 							/>
 							<h3 class="product-title">elitebook</h3>
-							<p class="product-description">elitebook is a mid range laptop for handling vigorous office applications,<br>and even gaming.</p>
+							<p class="product-description">elitebook is an upgraded version of our popular Spectre laptop, with even more power and performance</p>
 							<p class="product-price">$1500.00</p>
 							<p class="product-button"><br><a href="Product_customization.php?product=elitebook">VIEW PRODUCT</a></p>
 						</div>

@@ -46,8 +46,8 @@
 								alt="Product Name"
 							/>
 							<h3 class="product-title">zenith</h3>
-							<p class="product-description">zenith is suitable for tasks like office productivity,<br> web browsing, and even gaming.</p>
-							<p class="product-price">$880.00</p>
+							<p class="product-description">zenith is designed for maximum efficiency, it is suitable for<br> multitasking and gaming.</p>
+							<p class="product-price">$1500.00</p>
 							<p class="product-button"><br><a href="PCDetails.php?pc=zenith">CUSTOMIZE</a></p>
 						</div>&nbsp;
 						<div class="product-card">
@@ -58,8 +58,8 @@
 								alt="Product Name"
 							/>
 							<h3 class="product-title">horizon</h3>
-							<p class="product-description">horizon is suitable for tasks like multi-tasking, watching<br>movies, and even gaming.</p>
-							<p class="product-price">$950.00</p>
+							<p class="product-description">horizon is designed for gamers and power users, watching<br>movies, and even gaming.</p>
+							<p class="product-price">$1600.00</p>
 							<p class="product-button"><br><a href="PCDetails.php?pc=horizon">CUSTOMIZE</a></p>
 						</div>
 					</div>
@@ -74,9 +74,9 @@
 								height="400px"
 								alt="Product Name"
 							/>
-							<h3 class="product-title">nova</h3>
-							<p class="product-description">nova is a mid range PC that can achieve quality gaming<br> experience.</p>
-							<p class="product-price">$800.00</p>
+							<h3 class="product-title">nova1</h3>
+							<p class="product-description">nova is a mid range PC that's perfect for work or play<br> and even streams video well.</p>
+							<p class="product-price">$1700.00</p>
 							<p class="product-button"><br><a href="PCDetails.php?pc=nova">CUSTOMIZE</a></p>
 						</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<div class="product-card">
@@ -87,8 +87,8 @@
 								alt="Product Name"
 							/>
 							<h3 class="product-title">zenith-pro</h3>
-							<p class="product-description">zenith-prois a mid range PC for handling vigorous office applications,<br>and even gaming.</p>
-							<p class="product-price">$1200.00</p>
+							<p class="product-description">zenith-pro is a upgraded version of Zenith PC,<br>this PC can handle any tasks.</p>
+							<p class="product-price">$1800.00</p>
 							<p class="product-button"><br><a href="PCDetails.php?pc=zenith pro">CUSTOMIZE</a></p>
 						</div>
 					</div>
@@ -114,7 +114,7 @@
 							/>
 							<h3 class="product-title">alpha</h3>
 							<p class="product-description">alpha is a high-end PC that all gamers wish for,<br>it can handle all operations smoothly, especially gaming.</p>
-							<p class="product-price">$700.00</p>
+							<p class="product-price">$3000.00</p>
 							<p class="product-button"><br><a href="PCDetails.php?pc=alpha">CUSTOMIZE</a></p>
 						</div>&nbsp;
 						<div class="product-card">
@@ -126,7 +126,7 @@
 							/>
 							<h3 class="product-title">beta</h3>
 							<p class="product-description">beta is a high-end PC that all gamers wish for,<br>it can handle all operations exceptionally well, especially gaming.</p>
-							<p class="product-price">$600.00</p>
+							<p class="product-price">$4000.00</p>
 							<p class="product-button"><br><a href="PCDetails.php?pc=beta">CUSTOMIZE</a></p>
 						</div>
 					</div>
