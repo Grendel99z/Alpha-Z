@@ -280,8 +280,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
                 </div>
             </div>
         </div>
+        <div id="footer"></div>
     </div>
-    <div id="footer"></div>
         <div id="customize_summary">
             <div id="productTitle">
                 <h2><?php echo $name; ?></h2>
