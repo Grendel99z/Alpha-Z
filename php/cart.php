@@ -3,6 +3,21 @@ error_reporting(0);
 // cart.php
 session_start();
 
+if(!isset($_SESSION['user_id'])){
+   $_SESSION['error'] = 'You must be logged in to view your cart!';
+    if(isset($_SERVER['HTTP_REFERER'])) {
+        if ($_SERVER['HTTP_REFERER'] == 'http://localhost:8888/alphaZ/Alpha-z/php/cart.php') {
+            header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php');
+            exit();
+        }
+        header('Location: '.$_SERVER['HTTP_REFERER']);
+    } else {
+        // Redirect to a default page if HTTP_REFERER is not set
+        header('Location: http://localhost:8888/alphaZ/Alpha-z/php/homepage.php');
+    }
+    exit();
+}
+
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
 }

@@ -39,7 +39,6 @@ input[type="radio"] {
 #productAdditions label {
 	color: white;
 	width: 80%;
-	height: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

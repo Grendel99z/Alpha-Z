@@ -17,10 +17,17 @@ body {
 .promotion {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 3px;
 	width: 100%;
 	background-color: #cb9d59;
+}
+
+.promotion a:link,
+.promotion a:visited,
+.promotion a:hover,
+.promotion a:active .promotion a {
+	text-decoration: none;
 }
 
 .navbar {
