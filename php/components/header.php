@@ -1,7 +1,7 @@
 <?php
     session_start();
     
-    if($_SESSION['error']){
+    if(isset($_SESSION['error'])){
         echo '<script>alert("'.$_SESSION['error'].'")</script>';
     }
   
