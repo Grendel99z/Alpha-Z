@@ -104,14 +104,14 @@
 						<div class="mySlides fade">
 						<div class="numbertext">1 / 3</div>
 
-						<img src="../assets/products/accessories/mouse/GPro.png" style="width:33%">
-						<img src="../assets/products/Laptop/envy.png" style="width:33%">
-						<img src="../assets/products/accessories/keyboard/GProX2.png" style="width:33%">
+						<a href="Product_customization.php?product=G Pro"><img src="../assets/products/accessories/mouse/GPro.png" style="width:33%"></a>
+						<a href="Product_customization.php?product=envy"><img src="../assets/products/Laptop/envy.png" style="width:33%"></a>
+						<a href="Product_customization.php?product=G Pro X"><img src="../assets/products/accessories/keyboard/GProX2.png" style="width:33%" height ="325px"></a>
 
 						<div class="hotsalesname">
 						<h3 class="product-title">GPro</h3>
-						<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;envy</h3>
-						<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GProx</h3></div>
+						<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;envy</h3>
+						<h3 class="product-title">&nbsp;&nbsp;&nbsp;G Pro X</h3></div>
 								
                         <div class="hotsalesprice">
 							<p class="product-price">$70.00</p>
@@ -124,14 +124,14 @@
 					
 						<div class="mySlides fade">
 						<div class="numbertext">2 / 3</div>
-						<img src="../assets/products/accessories/keyboard/G213.png" style="width:33%">
-						<img src="../assets/products/accessories/headset/Kraken.png" style="width:33%">
-						<img src="../assets/products/accessories/mouse/DeathAdder2.png" style="width:33%">
+						<a href="Product_customization.php?product=G213"><img src="../assets/products/accessories/keyboard/G213.png" style="width:33%" height="280px"></a>
+						<a href="Product_customization.php?product=Kraken"><img src="../assets/products/accessories/headset/Kraken.png" style="width:33%" height="280px"></a>
+						<a href="Product_customization.php?product=DeathAdder"><img src="../assets/products/accessories/mouse/DeathAdder2.png" style="width:33%"></a>
 
 						<div class="hotsalesname">
 							<h3 class="product-title">G213</h3>
-							<h3 class="product-title">Kraken</h3>
-							<h3 class="product-title">DeathAdder</h3></div>
+							<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kraken</h3>
+							<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DeathAdder</h3></div>
 									
 						<div class="hotsalesprice">
 							<p class="product-price">$60.00</p>
@@ -142,9 +142,9 @@
 					
 						<div class="mySlides fade">
 						<div class="numbertext">3 / 3</div>
-						<img src="../assets/products/Laptop/stream.png" style="width:33%">
-						<img src="../assets/products/Laptop/elitebook.png" style="width:33%">
-						<img src="../assets/products/accessories/mic/Yeti.png" style="width:33%">
+						<a href="Product_customization.php?product=stream"><img src="../assets/products/Laptop/stream.png" style="width:33%" height="280px"></a>
+						<a href="Product_customization.php?product=elitebook"><img src="../assets/products/Laptop/elitebook.png" style="width:33%" height="250px"></a>
+						<a href="Product_customization.php?product=Yeti"><img src="../assets/products/accessories/mic/Yeti.png" style="width:33%"></a>
 
 						<div class="hotsalesname">
 							<h3 class="product-title">stream</h3>
@@ -153,8 +153,8 @@
 									
 						<div class="hotsalesprice">
 							<p class="product-price">$2500.00</p>
-							<p class="product-price">$1500.00</p>
-							<p class="product-price">$130.00</p></div>
+							<p class="product-price">&nbsp;$1500.00</p>
+							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p></div>
 						<div class="text">HOT SALES 3</div>
 						</div>
 					
