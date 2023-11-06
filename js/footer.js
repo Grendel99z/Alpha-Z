@@ -7,8 +7,8 @@ const footerTemplate = `
                         Be the first to know about our special offers, news, and updates
                     </div>
                     <div id = "input">
-                        <form>
-                            <input type="email" id="email-input">
+                        <form action="server/send_mail.php"method="post" >
+                            <input type="email" name="email" id="email-input">
                             <button type="submit" id="email-button">Sign up</button>
                         </form>
                     </div>
