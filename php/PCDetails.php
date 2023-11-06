@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
         'type' => $product['type'],
     );
 
+    // Switch cases for add on features
 // Check for selected RAM add-on
 if (isset($_POST['RAMSelection'])) {
     $ramPrice = 0;
