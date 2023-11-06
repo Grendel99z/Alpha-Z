@@ -213,7 +213,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart ) {
                         />
                         <label for="Storage_04">
                             <p>2TB HDD</p>
-                            <p class="price">+$100</p>
+                            <p class="price">+$100.00</p>
                         </label>
                         <br />
                         <br />
