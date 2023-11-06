@@ -117,8 +117,8 @@ if (!isset($product_name)) {
 					<br />
 				</div>
 			</div>
-			<div id="footer"></div>
 		</div>
+		<div id="footer"></div>
 		<div id="customize_summary">
 			<div id="productTitle">
 				<h2><?php echo $name; ?></h2>

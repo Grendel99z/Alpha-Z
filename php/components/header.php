@@ -1,5 +1,6 @@
 <?php
-session_start();
+    session_start();
+    
     if($_SESSION['error']){
         echo '<script>alert("'.$_SESSION['error'].'")</script>';
     }
@@ -15,7 +16,7 @@ session_start();
                     Free Shipping on Our Gaming PCs, Nov 11-20.
                 </div>
                 <div id = "support">
-                    support
+                    <a href="contact.php"> Support </a>
                 </div>
             </div>
             <div class = "navbar">
@@ -39,9 +40,15 @@ session_start();
                             <a href="cart.php"><img src="../assets/cart.png"></a>
                         </div>
                         <div id = "cart-content">
-                          <?php echo count($_SESSION['cart']); ?>
+                          <?php 
+                          if (isset($_SESSION['cart'])){
+                              echo count($_SESSION['cart']); 
+                          }else{
+                            echo '0';
+                          }
+                          ?>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-</div>

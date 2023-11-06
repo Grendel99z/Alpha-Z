@@ -41,87 +41,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart && isset($_POST['add_
     // Add the product information to the session cart
     $_SESSION['cart'][] = array(
         'id' => $product['id'],
-        'name' => $product['name'],
-        'price' => $product['price'],
-        'image' => $product['picture'], // Add the image filename
-        'type' => $product['type'],
+        'name' => $name,
+        'price' => $_POST['price'],
+        'image' => $picture, // Add the image filename
+        'type' => $type,
     );
-
-    // Switch cases for add on features
-// Check for selected RAM add-on
-if (isset($_POST['RAMSelection'])) {
-    $ramPrice = 0;
-    switch ($_POST['RAMSelection']) {
-        case 'RAM_02':
-            $ramPrice = 50.00;
-            break;
-        case 'RAM_03':
-            $ramPrice = 100.00;
-            break;
-        // Add more cases for other options if needed
-    }
-    $totalCost += $ramPrice;
-}
-
-    // Check for selected Operating System add-on
-if (isset($_POST['OSSelections'])) {
-    $osPrice = 0;
-    switch ($_POST['OSSelections']) {
-        case 'OS_02':
-            $osPrice = 50.00;
-            break;
-        // Add more cases for other options if needed
-    }
-    $totalCost += $osPrice;
-}
-
-// Check for selected Storage add-on
-if (isset($_POST['StorageSelection'])) {
-    $storagePrice = 0;
-    switch ($_POST['StorageSelection']) {
-        case 'Storage_02':
-            $storagePrice = 50.00;
-            break;
-        case 'Storage_04':
-            $storagePrice = 100.00;
-            break;
-        // Add more cases for other options if needed
-    }
-    $totalCost += $storagePrice;
-}
-
-// Check for selected GPU add-on
-if (isset($_POST['GPUSelections'])) {
-    $gpuPrice = 0;
-    switch ($_POST['GPUSelections']) {
-        case 'GPU_02':
-            $gpuPrice = 50.00;
-            break;
-        case 'GPU_03':
-            $gpuPrice = 100.00;
-            break;
-        // Add more cases for other options if needed
-    }
-    $totalCost += $gpuPrice;
-}
-
-// Check for selected Case Lighting add-on
-if (isset($_POST['CLSelections'])) {
-    $clPrice = 0;
-    switch ($_POST['CLSelections']) {
-        case 'CL_02':
-            $clPrice = 20.00;
-            break;
-        // Add more cases for other options if needed
-    }
-    $totalCost += $clPrice;
-}
-
-
-// Repeat the same process for other add-ons (Operating System, Storage, GPU, Case Lighting)
-
-// Add the total cost to the cart
-$_SESSION['cart'][0]['price'] = $totalCost;
 }
 
 ?>
@@ -172,7 +96,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="RAM_01"
                             name="RAMSelection"
-                            value="RAM_01"
+                            value=0
                             checked
                         />
                         <label for="RAM_01">
@@ -182,7 +106,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="RAM_02"
                             name="RAMSelection"
-                            value="RAM_02"
+                            value=50
                         />
                         <label for="RAM_02">
                             <p>8GB Alpha DDR5</p>
@@ -192,7 +116,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="RAM_03"
                             name="RAMSelection"
-                            value="RAM_03"
+                            value=100
                         />
                         <label for="RAM_03">
                             <p>16GB Alpha DDR5</p>
@@ -213,7 +137,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="OS_01"
                             name="OSSelections"
-                            value="OS_01"
+                            value=0
                             checked
                         />
                         <label for="OS_01">
@@ -223,7 +147,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="OS_02"
                             name="OSSelections"
-                            value="OS_02"
+                            value=50
                         />
                         <label for="OS_02">
                             <p>Windows 11</p>
@@ -244,7 +168,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="Storage_01"
                             name="StorageSelection"
-                            value="Storage_01"
+                            value=0
                             checked
                         />
                         <label for="Storage_01">
@@ -254,7 +178,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="Storage_02"
                             name="StorageSelection"
-                            value="Storage_02"
+                            value=50
                         />
                         <label for="Storage_02">
                             <p>1TB SSD</p>
@@ -264,7 +188,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="Storage_03"
                             name="StorageSelection"
-                            value="Storage_03"
+                            value=0
                         />
                         <label for="Storage_03">
                             <p>1TB HDD</p>
@@ -273,7 +197,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="Storage_04"
                             name="StorageSelection"
-                            value="Storage_04"
+                            value=100
                         />
                         <label for="Storage_04">
                             <p>2TB HDD</p>
@@ -295,7 +219,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="GPU_01"
                             name="GPUSelections"
-                            value="GPU_01"
+                            value=0
                             checked
                         />
                         <label for="GPU_01">
@@ -305,7 +229,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="GPU_02"
                             name="GPUSelections"
-                            value="GPU_02"
+                            value=50
                         />
                         <label for="GPU_02">
                             <p>Beta core - 8GB</p>
@@ -315,7 +239,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="GPU_03"
                             name="GPUSelections"
-                            value="GPU_03"
+                            value=100
                         />
                         <label for="GPU_03">
                             <p>Charlie core - 8GB</p>
@@ -338,7 +262,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="CL_01"
                             name="CLSelections"
-                            value="CL_01"
+                            value=0
                             checked
                         />
                         <label for="CL_01">
@@ -348,7 +272,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                             type="radio"
                             id="CL_02"
                             name="CLSelections"
-                            value="CL_02"
+                            value=20
                         />
                         <label for="CL_02">
                             <p>Case Lighting (RGB)</p>
@@ -360,19 +284,20 @@ $_SESSION['cart'][0]['price'] = $totalCost;
                 </div>
             </div>
         </div>
-        <div id="footer"></div>
     </div>
+    <div id="footer"></div>
         <div id="customize_summary">
             <div id="productTitle">
                 <h2><?php echo $name; ?></h2>
                 <p>Quantity: <?php echo $quantity ?></p>
             </div>
-            <p id="productTotal">$<?php echo $totalCost ?></p>
+            <p id="productTotal">$<?php echo $price ?></p>
 
             <div id="addToCart">
                 <?php if ($canAddToCart) { ?>
                     <form method="post" action="">
-                        <input type="hidden" name="add_to_cart" value="1">
+                        <input id="base_price" type="hidden" name="base_price" value=<?php echo $price;?>>
+                        <input id="total_price" type="hidden" name="price" value=<?php echo $price;?>>
                         <button type="submit" id="addToCartButton" style="width: 200px; height: 50px;">Add to Cart</button>
                     </form>
                 <?php } else { ?>
@@ -381,6 +306,7 @@ $_SESSION['cart'][0]['price'] = $totalCost;
             </div>
     </div>
 </body>
+<script src="../js/PCDetails.js"></script>
 <script src="../js/sidePane.js"></script>
 <script src="../js/footer.js"></script>
 
