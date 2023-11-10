@@ -7,6 +7,30 @@
 	</head>
 
 	<body>
+		<?php 
+			session_start();
+			
+			@ $db = new mysqli('localhost', 'root', '', 'alphaz');
+
+			if ($db->connect_error) {
+				$_SESSION['error'] = 'There was an error connecting to the database!';
+				header('Location: '.$_SERVER['HTTP_REFERER']);
+			}
+
+			$stmt = "SELECT * FROM products WHERE type != 'PC' AND type != 'Laptop'";
+			$result = $db->query($stmt);
+
+			if ($result->num_rows > 0) {
+				$products = array();
+				while ($row = $result->fetch_assoc()) {
+					array_push($products, $row);
+				}
+			} else {
+				$_SESSION['error'] = 'There was an error retrieving the products!';
+				header('Location: '.$_SERVER['HTTP_REFERER']);
+			}
+
+		?>
 		<div class="wrapper">
 			<div id="header">
 				<?php
@@ -19,13 +43,13 @@
 					?>
 			</div>
 			<div id="body">
-			<div id="topofaccessories">
+				<div id="topofaccessories">
 					<h1>Accessories</h1>
 					<br />
-					Introducing the Ultimate Gaming Accessories Collection!<br />
-					Elevate your gaming experience to new heights with our<br />
+					Introducing the Ultimate Gaming Accessories Collection!
+					Elevate your gaming experience to new heights with our
 					handpicked selection of top-tier accessories to enhance your
-					gameplay<br />
+					gameplay
 					and provide you with a competitive edge.
 					<br /><br /><br /><br />
 				</div>
@@ -58,140 +82,23 @@
 				</div>
 
 				<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-				
-				<div class="container">
-					<div class="filterDiv Mouse">
-						<div class="product-card">
-							<a href="Product_customization.php?product=DeathAdder"
-								><img
-									src="../assets/products/accessories/mouse/DeathAdder2.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">&nbsp;DeathAdder</h3>
-							<p class="product-price">$50.00</p>
-						</div>
-						<div class="product-card">
-							<a href="Product_customization.php?product=G Pro"
-								><img
-									src="../assets/products/accessories/mouse/GPro.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">G Pro</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$70.00</p>
-						</div>
-					</div>
-				</div>
+				<div class="accessories" >
+					<?php
 
-				<div class="container">
-					<div class="filterDiv Keyboard">
-						<div class="product-card">
-							<a href="Product_customization.php?product=G213"
-								><img
-									src="../assets/products/accessories/keyboard/G213.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">G213</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</p>
-						</div>
-						<div class="product-card">
-							<a href="Product_customization.php?product=G Pro X"
-								><img
-									src="../assets/products/accessories/keyboard/GProX2.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">G Pro X</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p>
-						</div>
-					</div>
-				</div>
+						foreach ($products as $product) {
+							echo '<div class="product-card '.$product['type'].'">';
+							echo '<a href="Product_customization.php?product='.$product['name'].'">';
+							echo '<div class="product-image-container">';
+							echo '<img class="product-image"';
+							echo 'src="../assets/products/'.$product['picture'].'.png" />';
+							echo '</div>';
+							echo '<h3 class="product-title">'.$product['name'].'</h3>';
+							echo '<p class="product-price">$'.$product['price'].'</p>';
+							echo '</a>';
+							echo '</div>';
+						}
 
-				<div class="container">
-					<div class="filterDiv Headset">
-						<div class="product-card">
-							<a href="Product_customization.php?product=Cloud II"
-								><img
-									src="../assets/products/accessories/headset/CloudII.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">CloudII</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100.00</p>
-						</div>
-						<div class="product-card">
-							<a href="Product_customization.php?product=Kraken"
-								><img
-									src="../assets/products/accessories/headset/Kraken.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">Kraken</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="container">
-					<div class="filterDiv Webcam">
-						<div class="product-card">
-							<a href="Product_customization.php?product=Brio"
-								><img
-									src="../assets/products/accessories/webCam/Brio1.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">Brio</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$200.00</p>
-						</div>
-						<div class="product-card">
-							<a href="Product_customization.php?product=C920"
-								><img
-									src="../assets/products/accessories/webCam/C9201.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">C920</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="container">
-					<div class="filterDiv Microphone">
-						<div class="product-card">
-							<a href="Product_customization.php?product=Snowball"
-								><img
-									src="../assets/products/accessories/mic/Snowball4.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">Snowball</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$70.00</p>
-						</div>
-						<div class="product-card">
-							<a href="Product_customization.php?product=Yeti"
-								><img
-									src="../assets/products/accessories/mic/Yeti.png"
-									width="400px"
-									height="400px"
-									alt="Product Name"
-							/></a>
-							<h3 class="product-title">Yeti</h3>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p>
-						</div>
-					</div>
+					?>
 				</div>
 			</div>
 			<div id="footer"></div>
@@ -201,3 +108,5 @@
 	<script src="../js/footer.js"></script>
 	<script src="../js/filteraccessories.js"></script>
 </html>
+
+
