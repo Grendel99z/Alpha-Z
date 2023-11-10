@@ -47,8 +47,7 @@
 					<h1>PCs</h1>
 					<br />
 					Our PCs are designed with future-proofing in mind, allowing for
-					easy<br />
-					upgrades and expansion, so you can keep up with the ever-evolving<br />
+					easy upgrades and expansion, so you can keep up with the ever-evolving
 					technology landscape.
 					<br /><br /><br /><br />
 				</div>

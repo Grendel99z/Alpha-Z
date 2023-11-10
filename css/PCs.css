@@ -4,16 +4,7 @@
 	margin-top: 50px;
 	margin-left: 30px;
 	font-size: 18px;
-}
-
-#pcvalue {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-#pcpremium {
-	text-align: center;
+	width: 600px;
 }
 
 .product-list-container {
