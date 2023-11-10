@@ -7,6 +7,30 @@
 	</head>
 
 	<body>
+		<?php 
+			session_start();
+			
+			@ $db = new mysqli('localhost', 'root', '', 'alphaz');
+
+			if ($db->connect_error) {
+				$_SESSION['error'] = 'There was an error connecting to the database!';
+				header('Location: '.$_SERVER['HTTP_REFERER']);
+			}
+
+			$stmt = "SELECT * FROM products WHERE type = 'PC'";
+			$result = $db->query($stmt);
+
+			if ($result->num_rows > 0) {
+				$products = array();
+				while ($row = $result->fetch_assoc()) {
+					array_push($products, $row);
+				}
+			} else {
+				$_SESSION['error'] = 'There was an error retrieving the products!';
+				header('Location: '.$_SERVER['HTTP_REFERER']);
+			}
+
+		?>
 		<div class="wrapper">
 			<div id="header">
 				<?php
@@ -29,14 +53,27 @@
 					<br /><br /><br /><br />
 				</div>
 
-				<div>
+				<!-- <div>
 					<h2>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VALUE EDITION
 					</h2>
-				</div>
-
-				<div id="pcvalue">
+				</div> -->
+				<div class="pcs"> 
+					<?php
+						foreach ($products as $product) {
+							echo '<div class="product-card">';
+							echo '<img class="product-image"';
+							echo 'src="../assets/products/'.$product['picture'].'.png" />';
+							echo '<h3 class="product-title">'.$product['name'].'</h3>';
+							echo '<p class="product-description">'.(strlen($product['details']) > 75 ? substr($product['details'],0,70).'...' : $product['details']).'</p>';
+							echo '<p class="product-price">$'.$product['price'].'</p>';
+							echo '<p class="product-button"><br><a href="PCDetails.php?pc='.$product['name'].'">CUSTOMIZE</a></p>';
+							echo '</div>';
+						}
+					?>
+				</div>	
+				<!-- <div id="pcvalue">
 					<div class="product-list-container">
 						<div class="product-card">
 							<img
@@ -132,7 +169,7 @@
 					</div>
 
 					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-				</div>
+				</div> -->
 			</div>
 			<div id="footer"></div>
 		</div>
