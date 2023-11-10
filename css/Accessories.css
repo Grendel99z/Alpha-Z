@@ -13,7 +13,8 @@
 	border: none;
 	background-color: #4b391d;
 	min-width: 100%;
-	padding-bottom: 10px;
+	padding: 5px 0px;
+	margin-bottom: 80px;
 }
 
 #mousedisplayrow1 {

@@ -1,21 +1,46 @@
 /* homepage */
-
-#banner {
+#banner img {
+	width: 100%;
 	text-align: center;
-	width: 80%;
 }
 
 #underbanner {
-	text-align: center;
-	padding-top: 50px;
-	margin-top: 75px;
+	margin-top: 200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 200px;
 }
 
-#rectangle1 {
-	display: grid;
-	grid-auto-flow: column;
+.navigationCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	gap: 30px;
+}
+
+#pc,
+#laptop,
+#accessories {
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+	border: 2px solid #ccc;
+	padding: 10px 0px;
+	border-radius: 15px;
+	width: 250px;
+}
+
+.rectangle {
+	display: flex;
+	grid-auto-flow: row;
+	justify-content: center;
 	gap: 0px;
-	margin-top: 350px;
+	margin-top: 50px;
+	margin-bottom: 200px;
 }
 
 #textarea {
@@ -55,17 +80,6 @@
 	margin-bottom: 100px;
 }
 
-#rectangle2 {
-	display: grid;
-	grid-auto-flow: column;
-	gap: 10px;
-	margin-top: 250px;
-}
-
-#makespace {
-	margin-top: 350px;
-}
-
 #makespace1 {
 	margin-top: 75px;
 }
@@ -76,11 +90,10 @@
 
 #bottom {
 	text-align: center;
-
 	align-items: center;
 	justify-content: space-between;
 	gap: 10px;
-	margin-top: 300px;
+	margin-top: 150px;
 	margin-bottom: 150px;
 }
 
@@ -105,31 +118,6 @@ a:visited {
 	color: white;
 }
 
-#pc {
-	border: 2px solid #ccc;
-	padding: 10px;
-	border-radius: 15px;
-	width: 65px;
-	margin-left: 300px;
-	padding-left: 25px;
-}
-
-#laptop {
-	border: 2px solid #ccc;
-	padding: 10px;
-	border-radius: 15px;
-	width: 138px;
-	padding-left: 20px;
-	margin-left: 15px;
-}
-
-#accessories {
-	border: 2px solid #ccc;
-	padding: 10px;
-	border-radius: 15px;
-	width: 203px;
-}
-
 /* slider */
 
 /* Slideshow container */
@@ -142,9 +130,18 @@ a:visited {
 /* Hide the images by default */
 .mySlides {
 	display: none;
+	padding: 0px 40px;
 }
 
 /* Next & previous buttons */
+.prev {
+	margin-right: 20px;
+}
+
+.next {
+	margin-left: 20px;
+}
+
 .prev,
 .next {
 	cursor: pointer;

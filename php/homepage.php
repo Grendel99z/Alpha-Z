@@ -19,28 +19,26 @@
 					?>
 			</div>
 			<div id="body">
-			<div id="banner">
-					<!-- image of nice nice pcs laptops and accessories-->
-					<img src="../banner.jpg" width="1509px" height="500px" />
+				<div id="banner">
+				<!-- image of nice nice pcs laptops and accessories-->
+				<img src="../banner.jpg" />
 				</div>
 
 				<div id="underbanner">
-					<img src="../assets/products/PC/zenith.png" width="370px" height="400px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<img src="../assets/products/Laptop/pavilion.png" width="370px" height="400px" />
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<img src="../assets/accessories1.jpg" width="370px" height="400px" />
-
-					<br /><br />
+					<div class="navigationCard">
+						<img src="../assets/products/PC/zenith.png" width="370px" height="400px" />
+						<div id="pc"><a href="../php/PCs.php">PCs</a></div>
+					</div>
+					<div class="navigationCard">
+						<img src="../assets/products/Laptop/pavilion.png" width="370px" height="400px" />
+						<div id="laptop"><a href="../php/Laptops.php">LAPTOPS</a></div>
+					</div>
+					<div class="navigationCard">
+						<img src="../assets/accessories1.jpg" width="370px" height="400px" />					
+						<div id="accessories"><a href="../php/Accessories.php">ACCESSORIES</a></div>
+					</div>
 				</div>
-				<div class="product-list-container">
-					<div id="pc"><a href="../php/PCs.php">PCs</a></div>
-					<div id="laptop"><a href="../php/Laptops.php">LAPTOPS</a></div>
-					<div id="accessories"><a href="../php/Accessories.php">ACCESSORIES</a></div>
-				</div>
-
-				<div id="rectangle1">
-					<br /><br /><br /><br />
+				<div class="rectangle">
 
 					<div id="textarea">
 						<div id="textareatitle">ELEVATE</div><br><br>
@@ -62,10 +60,9 @@
 					</div>
 
 					<img src="../assets/leagueandapex.jpg" width="600px" height="500px" />
-				</div><br /><br /><br /><br /><br /><br /><br />
+				</div>
 
-				<div id="rectangle2">
-					<br /><br /><br /><br /><br />
+				<div class="rectangle">
 					<img src="../assets/products/PC/horizon.png" width="650px" height="525px" />
 
 					<div id="textarea2">
@@ -83,10 +80,8 @@
 						to collaborate with you in bringing it to life."
 					</div> </div>
                     
-					<div id="makespace"></div>
 					<div id="hr">
 						<hr width="50%" />
-						<br /><br /><br />
 					</div>
                     
 					<div id="bottom">
@@ -113,13 +108,7 @@
 						<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;envy</h3>
 						<h3 class="product-title">&nbsp;&nbsp;&nbsp;G Pro X</h3></div>
 								
-                        <div class="hotsalesprice">
-							<p class="product-price">$70.00</p>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$950.00</p>
-							<p class="product-price">$130.00</p></div>
-							
-						<div class="text">HOT SALES 1</div>
-						
+												
 						</div>
 					
 						<div class="mySlides fade">
@@ -133,11 +122,6 @@
 							<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kraken</h3>
 							<h3 class="product-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DeathAdder</h3></div>
 									
-						<div class="hotsalesprice">
-							<p class="product-price">$60.00</p>
-							<p class="product-price">$80.00</p>
-							<p class="product-price">$50.00</p></div>
-						<div class="text">HOT SALES 2</div>
 						</div>
 					
 						<div class="mySlides fade">
@@ -151,11 +135,7 @@
 							<h3 class="product-title">elitebook</h3>
 							<h3 class="product-title">Yeti</h3></div>
 									
-						<div class="hotsalesprice">
-							<p class="product-price">$2500.00</p>
-							<p class="product-price">&nbsp;$1500.00</p>
-							<p class="product-price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$130.00</p></div>
-						<div class="text">HOT SALES 3</div>
+						
 						</div>
 					
 						<!-- Next and previous buttons -->
