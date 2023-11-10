@@ -57,8 +57,10 @@
 			<?php
 						foreach ($products as $product) {
 							echo '<div class="product-card">';
+							echo '<div class="product-image-container">';
 							echo '<img class="product-image"';
 							echo 'src="../assets/products/'.$product['picture'].'.png" />';
+							echo '</div>';
 							echo '<h3 class="product-title">'.$product['name'].'</h3>';
 							echo '<p class="product-description">'.(strlen($product['details']) > 75 ? substr($product['details'],0,70).'...' : $product['details']).'</p>';
 							echo '<p class="product-price">$'.$product['price'].'</p>';
@@ -67,6 +69,17 @@
 						}
 					?>
 </div>
+
+
+				
+				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			</div>
+			<div id="footer"></div>
+		</div>
+	</body>
+	<script src="../js/sidePane.js"></script>
+	<script src="../js/footer.js"></script>
+</html>
 
 				<!-- <div>
 					<h2>
@@ -171,12 +184,3 @@
 						</div>
 					</div>
 				</div> -->
-				
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-			</div>
-			<div id="footer"></div>
-		</div>
-	</body>
-	<script src="../js/sidePane.js"></script>
-	<script src="../js/footer.js"></script>
-</html>
