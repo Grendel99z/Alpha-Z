@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get the form data
     $email = $_POST['email'];
@@ -12,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if($password != $password2){
         $_SESSION['error'] = 'Passwords do not match!';
         header('Location: '.$_SERVER['HTTP_REFERER']);
+        exit();
     }
     
     $password = md5($password);
@@ -26,33 +29,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Prepare the SQL statement
-    $stmt = "INSERT INTO user (name, address, phone_number, email, password) VALUES ('$name', '$address', '$phone_number', '$email', '$password')";
+    $stmt = "INSERT INTO user (name, address, phone_number, email, role, password) VALUES ('$name', '$address', '$phone_number', '$email', 'user', '$password');";
     // Execute the statement
     $result = $db->query($stmt);
 
-    if ($result) {
-        // Log the user in and set the session
-        session_start();
-        $_SESSION['user_id'] = $result->fetch_assoc()['id'];
-
-        // Redirect to the home page
-        // Redirect back to the previous page
-        if(isset($_SERVER['HTTP_REFERER'])) {
-            header('Location: '.$_SERVER['HTTP_REFERER']);
-        } else {
-            // Redirect to a default page if HTTP_REFERER is not set
-            header('Location: /homepage.php');
-        }
-        exit;
+    if (!$result) {
+        $_SESSION['error'] = 'There was an error signing up!';
     } else {
-        // Handle the error
-        $SESSION['error'] = 'There was an error signing up!';
-        echo $stmt->error;
+        $_SESSION['error'] = 'Sign up successful! Please sign in to continue.';
     }
-
+    
     // Close the statement and the connection
     $db->close();
+    if(isset($_SERVER['HTTP_REFERER'])) {
+        header('Location: '.$_SERVER['HTTP_REFERER']);
+    } else {
+        // Redirect to a default page if HTTP_REFERER is not set
+        header('Location: /homepage.php');
+    }
+    exit();
+
 }else{
-    $SESSION['error'] = 'Please fill in all the fields!';
+    $_SESSION['error'] = 'Please fill in all the fields!';
 }
 ?>
