@@ -53,7 +53,7 @@ for ($i = 0; $i < count($_SESSION['cart']); $i++) {
 <html>
 <head>
     <title>Alpha Z template</title>
-    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/thankyou.css" />
 </head>
 

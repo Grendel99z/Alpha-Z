@@ -14,7 +14,7 @@ if (!isset($product_name)) {
 <html>
 	<head>
 		<title>Alpha Z template</title>
-		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 		<link rel="stylesheet" type="text/css" href="../css/product_customization.css" />
 	</head>
 	<?php
