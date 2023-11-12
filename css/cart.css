@@ -3,7 +3,7 @@
 	font-size: 20px;
 	margin-top: 50px;
 	margin-left: 30px;
-	width: 300px;
+	width: 500px;
 	float: left; /* Float left to make room for the right column */
 }
 
@@ -24,4 +24,52 @@ form input[type="submit"] {
 	cursor: pointer;
 	font-size: 18px; /* Adjust the font size as needed */
 	margin: 10px auto; /* Center the button vertically */
+}
+
+.product {
+	display: flex;
+	flex-direction: row;
+	gap: 60px;
+	margin-bottom: 20px;
+}
+
+.productDetails {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.productName {
+	font-weight: bold;
+}
+
+.productQuantity,
+.productPrice {
+	color: grey;
+}
+
+.productTotalPrice {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
+.productTotalPrice p {
+	font-weight: bold;
+}
+
+#body a,
+#body a:visited,
+#body a:hover,
+#body a:active,
+#body a:link {
+	text-decoration: underline;
+	color: grey;
+}
+
+#buyerInformation {
+	margin-top: 80px;
+	font-size: ;
 }

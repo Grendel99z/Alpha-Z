@@ -59,22 +59,22 @@
 
 					<!-- Control buttons -->
 					<div id="myBtnContainer">
-						<button class="btn active" onclick="filterSelection('all')">
+						<button id="allButton" class="btn active" onclick="filterSelection('all')">
 							Show all
 						</button>
-						<button class="btn" onclick="filterSelection('Mouse')">
+						<button id="MouseButton" class="btn" onclick="filterSelection('Mouse')">
 							Mouse
 						</button>
-						<button class="btn" onclick="filterSelection('Keyboard')">
+						<button id="KeyboardButton" class="btn" onclick="filterSelection('Keyboard')">
 							Keyboard
 						</button>
-						<button class="btn" onclick="filterSelection('Headset')">
+						<button id="HeadsetButton" class="btn" onclick="filterSelection('Headset')">
 							Headsets
 						</button>
-						<button class="btn" onclick="filterSelection('Webcam')">
+						<button id="WebcamButton" class="btn" onclick="filterSelection('Webcam')">
 							Webcams
 						</button>
-						<button class="btn" onclick="filterSelection('Microphone')">
+						<button id="MicrophoneButton" class="btn" onclick="filterSelection('Microphone')">
 							Microphones
 						</button>
 					</div>

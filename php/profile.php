@@ -158,7 +158,6 @@ if (!isset($_SESSION['user_id'])) {
 								echo '<td><button class="updateProductButton" id="updateProductButton'.$product['id'].'" type="button" onClick="makeProductEditable('.$product['id'].')">Update</button></td>';
 								echo '<td><button class="saveProductButton" style="display:none" id="saveProductButton'.$product['id'].'" type="submit">Save</button></td>';
 								echo '<td><button class="cancelProductButton" style="display:none" id="cancelProductButton'.$product['id'].'" type="button" onClick="makeProductUneditable('.$product['id'].')">Cancel</button></td>';
-								echo '<td><a href="server/deleteProduct.php?id='.$product['id'].'">Delete</a></td>';
 								echo '</tr>';
 								echo '</form>';
 							}

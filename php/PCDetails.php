@@ -45,9 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart ) {
     $_SESSION['cart'][] = array(
         'id' => $product['id'],
         'name' => $name,
+        'base_price' => $price, // Add the base price of the product
         'price' => $_POST['price'],
         'image' => $picture, // Add the image filename
         'type' => $type,
+        'quantity' => 1
     );
 }
 
@@ -250,6 +252,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart ) {
                             <p class="price">+$50.00</p>
                         </label>
                         <input
+                        onChange="updateTotalPrice()"
                             type="radio"
                             id="GPU_03"
                             name="GPUSelections"
@@ -314,6 +317,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canAddToCart ) {
                     echo '<form method="post" action="">
                             <input id="base_price" type="hidden" name="base_price" value="'.$price.'">
                             <input id="total_price" type="hidden" name="price" value="'.$price.'">
+                            <input id="quantity" type="hidden" name="quantity" value="1">
                             <button type="submit" id="addToCartButton" style="width: 200px; height: 50px;">Add to Cart</button>
                         </form>';
                 } else { 
