@@ -53,7 +53,7 @@ if (!isset($product_name)) {
 
 			$canAddToCart = isset($_SESSION["user_id"]);
 
-			if (isset($_POST['add_to_cart']) && $canAddToCart && $quantity > 0) {
+			if (isset($_POST['add_to_cart']) && $canAddToCart) {
 				// Check if the 'Add to Cart' button was clicked and user is logged in
 				if (!isset($_SESSION['cart'])) {
 					$_SESSION['cart'] = array(); // Initialize the cart session variable if it doesn't exist
@@ -62,10 +62,10 @@ if (!isset($product_name)) {
 
 				
 				$productExists = false;
-					foreach ($_SESSION['cart'] as &$item) {
-						if ($item['id'] == $product['id']) {
-							$item['quantity'] += 1;
+					for ($i = 0; $i < COUNT($_SESSION['cart']); $i++) {
+						if ($_SESSION['cart'][$i]['id'] == $product['id']) {
 							$productExists = true;
+							$_SESSION['cart'][$i]['quantity'] += 1;
 							break;
 						}
 					}

@@ -64,7 +64,7 @@
 							echo '<h3 class="product-title">'.$product['name'].'</h3>';
 							echo '<p class="product-description">'.(strlen($product['details']) > 75 ? substr($product['details'],0,70).'...' : $product['details']).'</p>';
 							echo '<p class="product-price">$'.$product['price'].'</p>';
-							echo '<p class="product-button"><br><a href="product_customization.php?product='.$product['name'].'">CUSTOMIZE</a></p>';
+							echo '<p class="product-button"><br><a href="product_customization.php?product='.$product['name'].'">View Product</a></p>';
 							echo '</div>';
 						}
 					?>

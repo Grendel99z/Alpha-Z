@@ -86,9 +86,10 @@ for ($i = 0; $i < count($_SESSION['cart']); $i++) {
                     echo '<img src="../assets/products/' . $_SESSION['cart'][$i]['image'] . '.png" style="width: 200px; height: 200px;" />'; // Adjust the width and height
                     echo '</div>';
                     echo '<div id="productDetails">';
-                    echo '<div>' . $_SESSION['cart'][$i]['name'] . '</div>'; // Display the product name
+                    echo '<div><p>' . $_SESSION['cart'][$i]['name'] . '</p>'; // Display the product name
+                    echo '<p>quantity: ' . $_SESSION['cart'][$i]['quantity'] . '</p></div>'; // Display the product name
                     echo '<div id="productPrice">';
-                    echo '<p>$' . number_format($_SESSION['cart'][$i]['price'], 2) . '</p>';
+                    echo '<p>$' . number_format($_SESSION['cart'][$i]['price']* $_SESSION['cart'][$i]['quantity'], 2) . '</p>';
                     echo '</div>';
                     echo '</div>';
                     echo '</div>';
@@ -97,7 +98,7 @@ for ($i = 0; $i < count($_SESSION['cart']); $i++) {
                     // Add a horizontal line to separate cart items
                     echo '<hr>';
 
-                    $total = $total + $_SESSION['cart'][$i]['price'];
+                    $total = $total + $_SESSION['cart'][$i]['price']* $_SESSION['cart'][$i]['quantity'];
    
                 } 
                 // Loop through the cart items to update product quantities in the database
