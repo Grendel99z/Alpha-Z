@@ -99,7 +99,6 @@ const validateAddress = (addressInput) => {
 };
 
 const validateSignUp = () => {
-	console.log("happenning");
 	const firstNameInput = document.getElementById("signUp-first-name");
 	const lastNameInput = document.getElementById("signUp-last-name");
 	const phoneNumberInput = document.getElementById("signUp-phone-number");
@@ -121,8 +120,8 @@ const validateSignUp = () => {
 	alert += validateConfirmPassword(confirmPasswordInput, passwordInput);
 	alert += validateAddress(addressInput);
 
-	window.alert(alert);
 	if (alert !== "") {
+		window.alert(alert);
 		isValid = false;
 	}
 

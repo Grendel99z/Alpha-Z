@@ -1,6 +1,14 @@
 filterSelection("all");
 
 function filterSelection(selectedType) {
+	var allButtons, curButton;
+	allButtons = document.getElementsByClassName("btn");
+	curButton = document.getElementById(selectedType + "Button");
+	for (i = 0; i < allButtons.length; i++) {
+		allButtons[i].classList.remove("active");
+	}
+	curButton.classList.add("active");
+
 	var allItems, i;
 	allItems = document.getElementsByClassName("product-card");
 	var count = allItems.length;

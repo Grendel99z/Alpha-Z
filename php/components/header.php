@@ -41,8 +41,12 @@
                         </div>
                         <div id = "cart-content">
                           <?php 
-                          if (isset($_SESSION['cart'])){
-                              echo count($_SESSION['cart']); 
+                            if (isset($_SESSION['cart'])){
+                            $totalQuantity = 0;
+                            foreach ($_SESSION['cart'] as $item) {
+                                $totalQuantity += $item['quantity'];
+                            }
+                            echo $totalQuantity; 
                           }else{
                             echo '0';
                           }

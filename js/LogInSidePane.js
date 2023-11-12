@@ -30,7 +30,7 @@ const signUpTemplate = `
     <input  type="tel" name="phone_number" id="signUp-phone-number" placeholder="Phone Number">
     <textarea  id="signUp-address" name="address" placeholder="Address"></textarea>
     <input  type="password" name="password" id="signUp-password" placeholder="Password">
-    <input  type="password" id="signUp-confirm-password" placeholder="Confirm Password">
+    <input  type="password" name="password2" id="signUp-confirm-password" placeholder="Confirm Password">
     <button type="submit" id="signup-button">Sign Up</button>
     <button id="login-button" onClick="changeToSignIn()" >Log In</button>
     </form>

@@ -59,13 +59,28 @@ if (!isset($product_name)) {
 					$_SESSION['cart'] = array(); // Initialize the cart session variable if it doesn't exist
 				}
 				// After fetching product details from the database, add the image filename to the session
-				$_SESSION['cart'][] = array(
-					'id' => $product['id'],
-					'name' => $product['name'],
-					'price' => $product['price'],
-					'image' => $product['picture'], // Add the image filename
-					'type'	=> $product['type']
-				);
+
+				
+				$productExists = false;
+					foreach ($_SESSION['cart'] as &$item) {
+						if ($item['id'] == $product['id']) {
+							$item['quantity'] += 1;
+							$productExists = true;
+							break;
+						}
+					}
+
+					// If the product doesn't exist in the cart, add a new item
+					if (!$productExists) {
+						$_SESSION['cart'][] = array(
+							'id' => $product['id'],
+							'name' => $product['name'],
+							'price' => $product['price'],
+							'image' => $product['picture'], // Add the image filename
+							'type' => $product['type'],
+							'quantity' => 1
+						);
+					}
 
 			}
 		?>

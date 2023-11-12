@@ -50,3 +50,118 @@
 	background-color: #006c8e;
 	color: white;
 }
+
+.toggleButton {
+	position: relative;
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	color: white;
+	width: 60px;
+	height: 34px;
+}
+
+.toggleButton input {
+	display: none;
+}
+
+.toggleButton .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.toggleButton .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.toggleButton input:checked + .slider {
+	background-color: #2196f3;
+}
+
+.toggleButton input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+.toggleButton input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+#body #transactionDetails {
+	margin-top: 120px;
+}
+
+#body #adminProductsChange {
+	margin-top: 120px;
+}
+
+#body #adminProductsChange .editableProduct {
+	background-color: transparent;
+	color: white;
+	border: none;
+	text-align: center;
+}
+
+#body #adminProductsChange .updateProductButton,
+#body #adminProductsChange .cancelProductButton {
+	background-color: #8c0000;
+	color: rgb(221, 221, 221);
+	padding: 5px;
+}
+
+#body #adminProductsChange .saveProductButton {
+	background-color: #006c8e;
+	color: rgb(221, 221, 221);
+	padding: 5px;
+}
+
+#body #adminTransactions {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+#body #adminTransactions table tr:nth-child(1) {
+	background-color: grey;
+}
+
+#body #adminProductsChange table tr {
+	height: 60px;
+}
+
+#body #adminTransactions table,
+#body #adminProductsChange table {
+	text-align: center;
+}
+
+#body #adminTransactions table td:nth-child(1) {
+	text-align: left;
+}
+
+#body #adminTransactions table .tableDate {
+	border-bottom: 1px solid #cb9d59;
+	color: white;
+	font-weight: bold;
+}
+
+#body #adminTransactions table .totalTransaction {
+	border-top: 1px solid #cb9d59;
+	border-bottom: 1px solid #cb9d59;
+	color: white;
+	font-weight: bold;
+}

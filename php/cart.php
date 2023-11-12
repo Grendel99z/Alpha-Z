@@ -56,29 +56,18 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$total = 0;
+$totalItems = 0;
+
 // Fetch product data from the database based on the product IDs in the cart
-foreach ($_SESSION['cart'] as $productId) {
-    $sql = "SELECT name, price, picture FROM Products WHERE id = '$productId'";
-
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        $items[] = $row["name"];
-        $prices[] = $row["price"];
-        $images[] = $row["picture"];
-    }
+for ($i = 0; $i < count($_SESSION['cart']); $i++) {
+    $curQuantity = $_SESSION['cart'][$i]['quantity'];
+    $curPrice = $_SESSION['cart'][$i]['price'];
+    $totalItems += $curQuantity;
+    $total += $curQuantity*$curPrice;
 }
 
-
 // Calculate the total using the prices from the session
-$total = array_sum($prices);
-
-// Store the cart data in session variables
-$_SESSION['cart_items'] = $items;
-$_SESSION['cart_prices'] = $prices;
-$_SESSION['cart_total'] = $total;
-$_SESSION['cart_images'] = $images;
 
 // Redirect to the thank you page with the POST data
 if (isset($_POST['submit'])) {
@@ -113,24 +102,34 @@ $conn->close();
         
                 <div id="leftcolumn">
                     <h1>Your cart</h1>
-                    <p>Your shopping cart contains <?php echo count($_SESSION['cart']); ?> items.</p>
+                    <p>Your shopping cart contains <?php echo $totalItems; ?> items.</p>
                     <br />
                     Not ready to checkout? Continue shopping <br /><br /><br />
 
-                    <table border="1">
                         <tbody>
                         <?php
-                        $total = 0;
                         for ($i = 0; $i < count($_SESSION['cart']); $i++) {
                             echo '<div id="orderedItem">';
-                            echo '<div id="product">';
+                            echo '<div class="product">';
                             echo '<div id="productImage">';
                             echo '<img src="../assets/products/' . $_SESSION['cart'][$i]['image'] . '.png" style="width: 200px; height: 200px;" />'; // Adjust the width and height
                             echo '</div>';
-                            echo '<div id="productDetails">';
-                            echo '<div>' . $_SESSION['cart'][$i]['name'] . '</div>'; // Display the product name
-                            echo '<div id="productPrice">';
-                            echo '<p>$' . number_format($_SESSION['cart'][$i]['price'], 2) . ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="' . $_SERVER['PHP_SELF'] . '?remove=' . $i . '">Remove</a></p>';
+                            echo '<div class="productDetails">';
+                            echo '<div class="basicDetails"><p class="productName">' . $_SESSION['cart'][$i]['name'] . '</p>'; // Display the product name
+                            echo '<div class="productQuantity">';
+                            echo '<p>Quantity: ' . $_SESSION['cart'][$i]['quantity'] . '</p>';
+                            echo '</div>';
+                            echo '<div class="productPrice">';
+                            if ($_SESSION['cart'][$i]['type'] == 'PC') {
+                                echo '<p>Base Price: $' . number_format($_SESSION['cart'][$i]['base_price'],2) . '</p>';
+                            } else{
+
+                                echo '<p>Price: $' . number_format($_SESSION['cart'][$i]['price'],2) . '</p>';
+                            }
+                            echo '</div>';
+                            echo '</div>';
+                            echo '<div class="productTotalPrice">';
+                            echo '<p>Total: $' . number_format($_SESSION['cart'][$i]['price'] * $_SESSION['cart'][$i]['quantity'], 2) . '</p><a href="' . $_SERVER['PHP_SELF'] . '?remove=' . $i . '">Remove</a>';
                             echo '</div>';
                             echo '</div>';
                             echo '</div>';
@@ -138,8 +137,6 @@ $conn->close();
 
                             // Add a horizontal line to separate cart items
                             echo '<hr>';
-
-                            $total = $total + $_SESSION['cart'][$i]['price'];
                         }
                         
                         ?>
@@ -147,18 +144,40 @@ $conn->close();
                         <p><a href="homepage.php">Continue Shopping</a> or
                             <a href="<?php echo $_SERVER['PHP_SELF']; ?>?empty=1">Empty your cart</a></p>
                         </tbody>
-                    </table>
-                    <br><br><br>
-                    Order information<br />
-                            <hr />
-                            <br />
-                            Return Policy
-                            <hr />
-                            <br />
+                        <div id="buyerInformation">
+                            <?php
+                            if (isset($_SESSION['user_id'])) {
+                                //get from db
+                                @ $db = new mysqli('localhost', 'root', '', 'alphaz');
 
-                            Shipping Options
-                            <hr />
-                            <br />
+                                if ($db->connect_error) {
+                                    $_SESSION['error'] = 'There was an error connecting to the database!';
+                                    header('Location: '.$_SERVER['HTTP_REFERER']);
+                                }
+
+                                $stmt = "SELECT * FROM user WHERE id = ". $_SESSION['user_id'];
+                                $result = $db->query($stmt);
+
+                                if ($result) {
+                                    $user = $result->fetch_assoc();
+                                    $userName = $user['name'];
+                                    $userEmail= $user['email'];
+                                    $userAddress = $user['address'];
+                                    $userPhoneNumber = $user['phone_number'];
+                                } else {
+                                    $_SESSION['error'] = 'There was an error retrieving the user information!';
+                                    header('Location: '.$_SERVER['HTTP_REFERER']);
+                                }
+
+
+                                echo '<h3>Buyer Information</h3>';
+                                echo '<p>Name: ' .$userName . '</p>';
+                                echo '<p>Email: ' .$userEmail . '</p>';
+                                echo '<p>Address: ' .$userAddress . '</p>';
+                                echo '<p>Phone Number: ' .$userPhoneNumber . '</p>';
+                            }
+                            ?>
+                    </div>
                         </div>
 
                 <div id="rightcolumn">
