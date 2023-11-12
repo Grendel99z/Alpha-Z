@@ -35,8 +35,8 @@ for ($i = 0; $i < count($_SESSION['cart']); $i++) {
     $product_id = $_SESSION['cart'][$i]['id'];
     $name = $_SESSION['cart'][$i]['name'];
     $type = $_SESSION['cart'][$i]['type'];
-    $price = $_SESSION['cart'][$i]['price'];
-    $quantity_purchased = 1; // You may need to adjust this based on the actual quantity purchased
+    $quantity_purchased = $_SESSION['cart'][$i]['quantity'];
+    $price = $_SESSION['cart'][$i]['price'] * $quantity_purchased;
 
     // Insert a record into the "records" table
     $insert_query = "INSERT INTO records (name, price, type, quantity, date) VALUES ('$name', $price, '$type', $quantity_purchased, NOW())";
