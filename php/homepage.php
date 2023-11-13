@@ -21,7 +21,7 @@
 			<div id="body">
 				<div id="banner">
 				<!-- image of nice nice pcs laptops and accessories-->
-				<img src="../banner.jpg" />
+				<img src="../assets/banner.jpg" />
 				</div>
 
 				<div id="underbanner">
