@@ -1,4 +1,8 @@
 <?php
+error_reporting(0);
+?>
+
+<?php
 session_start();
 
 $pc = $_GET['pc'];

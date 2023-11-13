@@ -1,4 +1,8 @@
 <?php
+error_reporting(0);
+?>
+
+<?php
 session_start(); // Start the session
 
 $product_name = $_GET['product'];
