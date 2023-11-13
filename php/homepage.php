@@ -101,7 +101,7 @@
 
 						<a href="Product_customization.php?product=G Pro"><img src="../assets/products/accessories/mouse/GPro.png" style="width:33%"></a>
 						<a href="Product_customization.php?product=envy"><img src="../assets/products/Laptop/envy.png" style="width:33%"></a>
-						<a href="Product_customization.php?product=G Pro X"><img src="../assets/products/accessories/keyboard/GProX2.png" style="width:33%" height ="325px"></a>
+						<a href="Product_customization.php?product=G Pro X"><img src="../assets/products/accessories/keyboard/GProX.png" style="width:33%" height ="325px"></a>
 
 						<div class="hotsalesname">
 						<h3 class="product-title">GPro</h3>
